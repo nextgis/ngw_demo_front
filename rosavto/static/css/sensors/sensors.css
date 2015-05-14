@@ -1,0 +1,659 @@
+/* popup styles */
+#map div.leaflet-popup-content-wrapper {
+    border-radius: 8px;
+}
+
+#map div.leaflet-popup-content {
+    margin: 2px 17px 2px 7px;
+}
+
+/*Cluster styles*/
+.leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
+    -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;
+    -moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s ease-in;
+    -o-transition: -o-transform 0.3s ease-out, opacity 0.3s ease-in;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-in;
+}
+
+.marker-cluster-small {
+    background-color: rgba(181, 226, 140, 0.6);
+}
+
+.marker-cluster-small div {
+    background-color: rgba(110, 204, 57, 0.6);
+}
+
+.marker-cluster-medium {
+    background-color: rgba(241, 211, 87, 0.6);
+}
+
+.marker-cluster-medium div {
+    background-color: rgba(240, 194, 12, 0.6);
+}
+
+.marker-cluster-large {
+    background-color: rgba(253, 156, 115, 0.6);
+}
+
+.marker-cluster-large div {
+    background-color: rgba(241, 128, 23, 0.6);
+}
+
+/* IE 6-8 fallback colors */
+.leaflet-oldie .marker-cluster-small {
+    background-color: rgb(181, 226, 140);
+}
+
+.leaflet-oldie .marker-cluster-small div {
+    background-color: rgb(110, 204, 57);
+}
+
+.leaflet-oldie .marker-cluster-medium {
+    background-color: rgb(241, 211, 87);
+}
+
+.leaflet-oldie .marker-cluster-medium div {
+    background-color: rgb(240, 194, 12);
+}
+
+.leaflet-oldie .marker-cluster-large {
+    background-color: rgb(253, 156, 115);
+}
+
+.leaflet-oldie .marker-cluster-large div {
+    background-color: rgb(241, 128, 23);
+}
+
+.marker-cluster {
+    background-clip: padding-box;
+    border-radius: 20px;
+}
+
+.marker-cluster div {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+
+    text-align: center;
+    border-radius: 15px;
+    font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.marker-cluster span {
+    line-height: 30px;
+}
+
+/*img.leaflet-marker-icon {*/
+    /*width: 44px !important;*/
+    /*height: 44px !important;*/
+    /*margin-left: -22px !important;*/
+    /*margin-top: -22px !important;*/
+/*}*/
+
+.marker-cluster-RED {
+    background-color: rgba(240, 12, 12, 0.6);
+}
+
+.marker-cluster-GREEN {
+    background-color: rgba(255, 255, 255, 0.60);
+}
+
+.marker-cluster-YELLOW {
+    background-color: rgba(222, 240, 12, 0.6);
+}
+
+.marker-cluster-GRAY,
+.marker-cluster-failure,
+.marker-cluster-disabled {
+    background-color: rgba(96, 96, 96, 0.75);
+}
+
+div.leaflet-marker-icon.sensor {
+    background-image: url('../images/sensors-states.png');
+    background-repeat: no-repeat;
+    width: 44px !important;
+    height: 44px !important;
+    /*margin-left: -22px !important;*/
+    margin-top: -27px !important;
+}
+
+/* meteo styles */
+.sensor.meteo-normal {
+    background-position: 0 0;
+}
+
+.sensor.meteo-attention {
+    background-position: -44px 0;
+}
+
+.sensor.meteo-alarm {
+    background-position: -88px 0;
+}
+
+.sensor.meteo-inactive {
+    background-position: -132px 0;
+}
+
+.sensor.meteo-failure {
+    background-position: -176px 0;
+}
+
+.sensor.meteo-disabled {
+    background-position: -220px 0;
+}
+
+.sensor.meteo-normal.selected {
+    background-position: -264px 0;
+}
+
+.sensor.meteo-attention.selected {
+    background-position: -308px 0;
+}
+
+.sensor.meteo-alarm.selected {
+    background-position: -352px 0;
+}
+
+.sensor.meteo-inactive.selected {
+    background-position: -396px 0;
+}
+
+.sensor.meteo-failure.selected {
+    background-position: -400px 0;
+}
+
+.sensor.meteo-disabled.selected {
+    background-position: -484px 0;
+}
+
+/* video styles */
+.video-normal {
+    background-position: 0 -88px;
+}
+
+/*.video-attention {*/
+/*background-position: -44px -88px;*/
+/*}*/
+
+/*.video-alarm {*/
+/*background-position: -88px -88px;*/
+/*}*/
+
+.video-inactive {
+    background-position: -132px -88px;
+}
+
+.video-failure {
+    background-position: -176px -88px;
+}
+
+.video-disabled {
+    background-position: -220px -88px;
+}
+
+.video-normal.selected {
+    background-position: -264px -88px;
+}
+
+/*.video-attention.selected {*/
+/*background-position: -308px -88px;*/
+/*}*/
+
+/*.video-alarm.selected {*/
+/*background-position: -352px -88px;*/
+/*}*/
+
+.video-inactive.selected {
+    background-position: -396px -88px;
+}
+
+.video-failure.selected {
+    background-position: -400px -88px;
+}
+
+.video-disabled.selected {
+    background-position: -484px -88px;
+}
+
+/* traffic styles */
+.traffic-normal {
+    background-position: 0 -132px;
+}
+
+.traffic-attention {
+    background-position: -44px -132px;
+}
+
+.traffic-alarm {
+    background-position: -88px -132px;
+}
+
+.traffic-inactive {
+    background-position: -132px -132px;
+}
+
+.traffic-failure {
+    background-position: -176px -132px;
+}
+
+.traffic-disabled {
+    background-position: -220px -132px;
+}
+
+.traffic-normal.selected {
+    background-position: -264px -132px;
+}
+
+.traffic-attention.selected {
+    background-position: -308px -132px;
+}
+
+.traffic-alarm.selected {
+    background-position: -352px -132px;
+}
+
+.traffic-inactive.selected {
+    background-position: -396px -132px;
+}
+
+.traffic-failure.selected {
+    background-position: -400px -132px;
+}
+
+.traffic-disabled.selected {
+    background-position: -484px -132px;
+}
+
+div.sensorsPopup,
+div.sensorsPopup table {
+    padding: 0;
+    margin: 0;
+}
+
+div.sensorsPopup td {
+    padding: 1px;
+    margin: 0;
+}
+
+div.sensorsPopup div.background {
+    width: 22px;
+    height: 22px;
+}
+
+div.sensorsPopup div.background {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+div.sensorsPopup div.background.GRAY {
+    background-color: rgba(169, 169, 169, 0.51);
+}
+
+div.sensorsPopup div.background.RED {
+    background-color: rgba(255, 0, 0, 0.51);
+}
+
+div.sensorsPopup div.background.GREEN {
+    background-color: rgba(9, 255, 0, 0.51);
+}
+
+div.sensorsPopup div.background.YELLOW {
+    background-color: rgba(255, 255, 0, 0.51);
+}
+
+div.sensorsPopup div.icon-sensor {
+    width: 18px;
+    height: 18px;
+    margin-top: -20px;
+    margin-left: 2px;
+    background: url('../images/sensors-values.png') -70px 0;
+}
+
+/* Meteo sensors*/
+div.sensorsPopup td.Temperature div.sensor {
+    width: 18px;
+    height: 5px;
+    margin: 1px 1px 1px 2px;
+}
+
+div.sensorsPopup td.Temperature div.sensor div.background {
+    width: 100%;
+    height: 100%;
+    background-color: #E4E2E2;
+}
+
+div.sensorsPopup td.Temperature div.TemperatureAir div.background.GRAY,
+div.sensorsPopup td.Temperature div.TemperatureRoad div.background.GRAY,
+div.sensorsPopup td.Temperature div.TemperatureUnderRoad div.background.GRAY {
+    background-color: #808080;
+}
+
+div.sensorsPopup td.Temperature div.TemperatureAir div.background.RED,
+div.sensorsPopup td.Temperature div.TemperatureRoad div.background.RED,
+div.sensorsPopup td.Temperature div.TemperatureUnderRoad div.background.RED {
+    background-color: red;
+}
+
+div.sensorsPopup td.Temperature div.TemperatureAir div.background.GREEN,
+div.sensorsPopup td.Temperature div.TemperatureRoad div.background.GREEN,
+div.sensorsPopup td.Temperature div.TemperatureUnderRoad div.background.GREEN {
+    background-color: green;
+}
+
+div.sensorsPopup td.Temperature div.TemperatureAir div.background.YELLOW,
+div.sensorsPopup td.Temperature div.TemperatureRoad div.background.YELLOW,
+div.sensorsPopup td.Temperature div.TemperatureUnderRoad div.background.YELLOW {
+    background-color: #ffff00;
+}
+
+div.sensorsPopup td.WindDirection div.icon-sensor.WindDirectionUndefined {
+    background-position: -142px -18px;
+}
+
+div.sensorsPopup td.WindDirection div.icon-sensor.WindDirectionNorth {
+    background-position: 0 -18px;
+}
+
+div.sensorsPopup td.WindDirection div.icon-sensor.WindDirectionSouth {
+    background-position: -18px -18px;
+}
+
+div.sensorsPopup td.WindDirection div.icon-sensor.WindDirectionWest {
+    background-position: -36px -18px;
+}
+
+div.sensorsPopup td.WindDirection div.icon-sensor.WindDirectionEast {
+    background-position: -54px -18px;
+}
+
+div.sensorsPopup td.WindDirection div.icon-sensor.WindDirectionNorthWest {
+    background-position: -72px -18px;
+}
+
+div.sensorsPopup td.WindDirection div.icon-sensor.WindDirectionNorthEast {
+    background-position: -90px -18px;
+}
+
+div.sensorsPopup td.WindDirection div.icon-sensor.WindDirectionSouthWest {
+    background-position: -108px -18px;
+}
+
+div.sensorsPopup td.WindDirection div.icon-sensor.WindDirectionSouthEast {
+    background-position: -126px -18px;
+}
+
+div.sensorsPopup td.PrecipitationCode div.icon-sensor.PRECIPITATION_RAIN {
+    background-position: 0 -36px;
+}
+
+div.sensorsPopup td.PrecipitationCode div.icon-sensor.PRECIPITATION_SNOW {
+    background-position: -18px -36px;
+}
+
+div.sensorsPopup td.PrecipitationCode div.icon-sensor.PRECIPITATION_RAIN_SNOW {
+    background-position: -36px -36px;
+}
+
+div.sensorsPopup td.PrecipitationCode div.icon-sensor.PRECIPITATION_NO {
+    background-position: -54px -36px;
+}
+
+div.sensorsPopup td.PrecipitationCode div.icon-sensor.PRECIPITATION_UNDEFINED {
+    background-position: -72px -36px;
+}
+
+div.sensorsPopup td.Cloudiness div.icon-sensor.CloudinessUndefined {
+    background-position: -54px -54px;
+}
+
+div.sensorsPopup td.Cloudiness div.icon-sensor.CloudinessSunny {
+    background-position: -36px -54px;
+}
+
+div.sensorsPopup td.Cloudiness div.icon-sensor.CloudinessSmallCloudy {
+    background-position: -18px -54px;
+}
+
+div.sensorsPopup td.Cloudiness div.icon-sensor.CloudinessCloudy {
+    background-position: 0 -54px;
+}
+
+div.sensorsPopup td.AirPlessure div.icon-sensor {
+    background-position: 0 -71px;
+}
+
+div.sensorsPopup td.LayerType div.icon-sensor.LAYER_WATER {
+    background-position: 0 -90px;
+}
+
+div.sensorsPopup td.LayerType div.icon-sensor.LAYER_WATER_CHEMICALS {
+    background-position: -18px -90px;
+}
+
+div.sensorsPopup td.LayerType div.icon-sensor.LAYER_FROST {
+    background-position: -36px -90px;
+}
+
+div.sensorsPopup td.LayerType div.icon-sensor.LAYER_SNOW {
+    background-position: -54px -90px;
+}
+
+div.sensorsPopup td.LayerType div.icon-sensor.LAYER_ICING {
+    background-position: -72px -90px;
+}
+
+div.sensorsPopup td.LayerType div.icon-sensor.LAYER_NO,
+div.sensorsPopup td.LayerType div.icon-sensor.LAYER_UNDEFINED {
+    background-position: -90px -90px;
+}
+
+div.sensorsPopup td.ReagentAmount div.icon-sensor.TRUE {
+    background-position: 0 -108px;
+}
+
+div.sensorsPopup td.ReagentAmount div.icon-sensor.FALSE {
+    background-position: -18px -108px;
+}
+
+div.sensorsPopup td.ViewDistance div.icon-sensor {
+    background-position: 0 -126px;
+}
+
+div.sensorsPopup td.Humidity div.icon-sensor {
+    background-position: 0 -144px;
+}
+
+div.sensorsPopup td.AdhesionCoefficient div.icon-sensor {
+    background-position: 0 -162px;
+}
+
+/* Traffic sensors*/
+div.sensorsPopup td.AverageSpeed div.icon-sensor {
+    background-position: 0 -180px;
+}
+
+div.sensorsPopup td.Amount div.icon-sensor {
+    background-position: 0 -198px;
+}
+
+div.sensorsPopup td.Trucks div.icon-sensor {
+    background-position: 0 -216px;
+}
+
+/* incidents styles */
+div.leaflet-marker-icon.crash-incident,
+div.leaflet-marker-icon.accident,
+div.leaflet-marker-icon.fire-incident,
+div.leaflet-marker-icon.meteo-incident,
+div.leaflet-marker-icon.terror-incident,
+div.leaflet-marker-icon.traffic-jam,
+div.leaflet-marker-icon.needs-clarification-incident {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+div.leaflet-marker-icon.crash-incident {
+    background-image: url('../images/incidents/142.png');
+}
+
+div.leaflet-marker-icon.crash-incident:hover, div.leaflet-marker-icon.crash-incident.pressed {
+    background-image: url('../images/incidents/142-a.png');
+}
+
+div.leaflet-marker-icon.accident {
+    background-image: url('../images/incidents/160.png');
+}
+
+div.leaflet-marker-icon.accident:hover, div.leaflet-marker-icon.accident.pressed {
+    background-image: url('../images/incidents/160-a.png');
+}
+
+div.leaflet-marker-icon.fire-incident {
+    background-image: url('../images/incidents/159.png');
+}
+
+div.leaflet-marker-icon.fire-incident:hover, div.leaflet-marker-icon.fire-incident.pressed {
+    background-image: url('../images/incidents/159-a.png');
+}
+
+div.leaflet-marker-icon.meteo-incident {
+    background-image: url('../images/incidents/149.png');
+}
+
+div.leaflet-marker-icon.meteo-incident:hover, div.leaflet-marker-icon.meteo-incident.pressed {
+    background-image: url('../images/incidents/149-a.png');
+}
+
+div.leaflet-marker-icon.terror-incident {
+    background-image: url('../images/incidents/158.png');
+}
+
+div.leaflet-marker-icon.terror-incident:hover, div.leaflet-marker-icon.terror-incident.pressed {
+    background-image: url('../images/incidents/158-a.png');
+}
+
+div.leaflet-marker-icon.traffic-jam {
+    background-image: url('../images/incidents/161.png');
+}
+
+div.leaflet-marker-icon.traffic-jam:hover, div.leaflet-marker-icon.traffic-jam.pressed {
+    background-image: url('../images/incidents/161-a.png');
+}
+
+div.leaflet-marker-icon.needs-clarification-incident {
+    background-image: url('../images/incidents/162.png');
+}
+
+div.leaflet-marker-icon.needs-clarification-incident:hover, div.leaflet-marker-icon.needs-clarification-incident.pressed {
+    background-image: url('../images/incidents/162-a.png');
+}
+
+/* selected objects styles */
+div.leaflet-marker-icon.obj {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+div.leaflet-marker-icon.obj.chemical-plants-s {
+    background-image: url('../../icons/layers/114_s.png');
+}
+
+div.leaflet-marker-icon.obj.nuclear-power-station-s {
+    background-image: url('../../icons/layers/111_s.png');
+}
+
+div.leaflet-marker-icon.obj.hydro-power-plants-s {
+    background-image: url('../../icons/layers/112_s.png');
+}
+
+div.leaflet-marker-icon.obj.isso-s {
+    background-image: url('../../icons/layers/141_s.png');
+}
+
+div.leaflet-marker-icon.obj.service-object-s {
+    background-image: url('../../icons/layers/135_s.png');
+}
+
+div.leaflet-marker-icon.obj.kilometer-posts-s {
+    background-image: url('../../icons/layers/140_s.png');
+}
+
+div.leaflet-marker-icon.obj.critical-facilities-s {
+    background-image: url('../../icons/layers/109_s.png');
+}
+
+div.leaflet-marker-icon.obj.is-s {
+    background-image: url('../../icons/layers/113_s.png');
+}
+
+div.leaflet-marker-icon.obj.pp {
+    background-image: url('../../icons/layers/139_s.png');
+}
+
+div.leaflet-marker-icon.obj.service1 {
+    background-image: url('../../icons/layers/135_s.png');
+}
+
+div.leaflet-marker-icon.obj.service2 {
+    background-image: url('../../icons/layers/128_s.png');
+}
+
+div.leaflet-marker-icon.obj.service3 {
+    background-image: url('../../icons/layers/115_s.png');
+}
+
+div.leaflet-marker-icon.obj.service4 {
+    background-image: url('../../icons/layers/131_s.png');
+}
+
+div.leaflet-marker-icon.obj.service5 {
+    background-image: url('../../icons/layers/115_s.png');
+}
+
+div.leaflet-marker-icon.obj.service6 {
+    background-image: url('../../icons/layers/128_s.png');
+}
+
+div.leaflet-marker-icon.obj.service7 {
+    background-image: url('../../icons/layers/138_s.png');
+}
+
+div.leaflet-marker-icon.obj.service8 {
+    background-image: url('../../icons/layers/125_s.png');
+}
+
+div.leaflet-marker-icon.obj.service9 {
+    background-image: url('../../icons/layers/127_s.png');
+}
+
+div.leaflet-marker-icon.obj.service10 {
+    background-image: url('../../icons/layers/123_s.png');
+}
+
+div.leaflet-marker-icon.obj.is-103 {
+    background-image: url('../../icons/layers/103_s.png');
+}
+
+div.leaflet-marker-icon.obj.is-108 {
+    background-image: url('../../icons/layers/108_s.png');
+}
+
+div.leaflet-marker-icon.obj.is-099 {
+    background-image: url('../../icons/layers/099_s.png');
+}
+
+div.leaflet-marker-icon.obj.is-098 {
+    background-image: url('../../icons/layers/098_s.png');
+}
+
+div.leaflet-marker-icon.obj.is-106 {
+    background-image: url('../../icons/layers/106_s.png');
+}
+
+div.leaflet-marker-icon.obj.cross-118 {
+    background-image: url('../../icons/layers/118_s.png');
+}
+
+div.leaflet-marker-icon.obj.cross-117 {
+    background-image: url('../../icons/layers/117_s.png');
+}
