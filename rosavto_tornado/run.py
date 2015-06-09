@@ -1,21 +1,3 @@
-# from pyramid.config import Configurator
-# import tornado.ioloop
-# import tornado.web
-# from rosavto_tornado import app
-# import sys
-
-
-# def main(global_cofig, **settings):
-#     config = Configurator(settings=settings)
-#     port = config.registry.settings['tornado_port']
-#     app.listen(port)
-#     tornado.ioloop.IOLoop.instance().start()
-#
-#
-# if __name__ == "__main__":
-#     main(sys.argv[1])
-
-
 import argparse
 
 from sqlalchemy import engine_from_config

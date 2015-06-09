@@ -24,3 +24,8 @@ def layers(request):
 @view_config(route_name='base_layers', renderer='base_layers.mako')
 def base_layers(request):
     return {}
+
+
+@view_config(route_name='entels_map', renderer='entels/map.mako')
+def entels_map(request):
+    return {}

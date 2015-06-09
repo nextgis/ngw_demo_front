@@ -3,7 +3,7 @@ import os
 from setuptools import setup, find_packages
 
 here = os.path.abspath(os.path.dirname(__file__))
-README = open(os.path.join(here, 'README.txt')).read()
+README = open(os.path.join(here, 'README.md')).read()
 CHANGES = open(os.path.join(here, 'CHANGES.txt')).read()
 
 requires = [
@@ -34,10 +34,10 @@ setup(name='rosavto',
           "Topic :: Internet :: WWW/HTTP",
           "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
       ],
-      author='nextgis',
+      author='NextGIS',
       author_email='info@nextgis.ru',
-      url='http://github.com/nextgis/rosavto',
-      keywords='web wsgi bfg pylons pyramid',
+      url='https://github.com/nextgis/ngw_demo_front',
+      keywords='web wsgi pylons pyramid widgets NextGIS Web',
       packages=find_packages(),
       include_package_data=True,
       zip_safe=False,
@@ -50,4 +50,4 @@ setup(name='rosavto',
       initialize_rosavto_db = rosavto.initializedb.initializedb:main
       ways_exporter = rosavto.initializedb.ways_exporter:main
       """,
-)
+      )

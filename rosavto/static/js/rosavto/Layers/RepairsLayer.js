@@ -21,7 +21,7 @@ define([
         onAdd: function (map) {
             StyledGeoJsonLayer.prototype.onAdd.call(this, map);
             this._hookMap(map);
-            this._buildRepairs();
+            this._buildObjects();
         },
 
         onRemove: function (map) {
@@ -30,14 +30,14 @@ define([
         },
 
         _hookMap: function (map) {
-            map.on('moveend zoomend', this._buildRepairs, this);
+            map.on('moveend zoomend', this._buildObjects, this);
         },
 
         _unhookMap: function (map) {
-            map.off('moveend zoomend', this._buildRepairs, this);
+            map.off('moveend zoomend', this._buildObjects, this);
         },
 
-        _buildRepairs: function () {
+        _buildObjects: function () {
             var bounds = this.options.map.getLMap().getBounds(),
                 extent = [bounds._southWest.lng, bounds._southWest.lat, bounds._northEast.lng, bounds._northEast.lat];
             this.clearLayers();

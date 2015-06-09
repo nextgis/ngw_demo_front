@@ -18,9 +18,10 @@
     <link rel="stylesheet" href="${request.static_url('rosavto:static/css/widget.css')}"/>
     <link rel="stylesheet" href="${request.static_url('rosavto:static/css/main.css')}"/>
     <link rel="stylesheet" href="${request.static_url('rosavto:static/contrib/prismjs/prism.css')}"/>
+    <%block name="css"/>
 </head>
 <body id="NxgDemo">
-    <%include file='_navigation.mako'/>
+##    <%include file='_navigation.mako'/>
 <main>
     <div class="section" id="index-banner">
         <div class="container">
@@ -28,7 +29,7 @@
                 <div class="col s12 m9">
                     <h1 class="header center-on-small-only">Демо-стенд</h1>
                     <h4 class="light indigo-text text-lighten-4 center-on-small-only">Демонстрация виджетов к системе
-                        NextGIS Web.</h4>
+                        NextGIS Web Entels.</h4>
                 </div>
             </div>
         </div>
@@ -78,7 +79,7 @@
             dojoConfig = {
                 isDebug: true,
                 async: true,
-                cacheBust: true,
+##                cacheBust: true,
                 baseUrl: "${request.static_url('rosavto:static/js')}",
                 packages: [
                     {name: "rosavto", location: 'rosavto'},
@@ -87,7 +88,8 @@
                     {name: 'leaflet', location: 'leaflet'},
                     {name: 'centreit', location: 'centreit'},
                     {name: 'stomp', location: 'stomp'},
-                    {name: 'sockjs', location: 'sockjs'}
+                    {name: 'sockjs', location: 'sockjs'},
+                    {name: 'entels', location: 'entels'}
                 ],
                 has: {
                     "dojo-firebug": true,

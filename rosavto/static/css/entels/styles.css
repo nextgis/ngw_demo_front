@@ -1,0 +1,8 @@
+#attributesPopup tr, #attributesPopup td {
+    padding: 1px;
+}
+
+#attributesPopup td {
+    max-width: 200px;
+    word-wrap: break-word;
+}
