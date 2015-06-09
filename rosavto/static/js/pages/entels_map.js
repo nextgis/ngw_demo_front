@@ -13,8 +13,8 @@ require([
 
     function (Map, LayersInfo, NgwServiceFacade, ScadaServiceFacade, ObjectsLayer, _mocks) {
         // Создаем и конфигурируем фасад к сервисам NGW
-        var ngwServiceFacade = new NgwServiceFacade('http://localhost/entels/ngw/'),
-            scadaServiceFacade = new ScadaServiceFacade('http://localhost/entels/scada/'),
+        var ngwServiceFacade = new NgwServiceFacade(proxyNgwUrl),
+            scadaServiceFacade = new ScadaServiceFacade(proxyScadaUrl),
         // Создаем и конфигурируем карту
             map = new Map('map', {
                 center: [55.529, 37.584],

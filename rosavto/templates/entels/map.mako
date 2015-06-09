@@ -24,9 +24,6 @@
 
 
 <%block name="inlineScripts">
-    <script>
-        var tornado_root_url = '${request.registry.settings['tornado.port']}';
-    </script>
     <script src="${request.static_url('rosavto:static/js/pages/' + request.matched_route.name + '.js')}"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 </%block>

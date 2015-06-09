@@ -62,20 +62,8 @@
 
 <script>
     var application_root = '${request.application_url}',
-            ngwUrlForTiles = '${request.registry.settings['proxy_ngw']}',
-            ngwProxyUrl = application_root + '/ngw/',
-            Monitoring = {
-                url: '${request.registry.settings['proxy_cit']}monitoring-web',
-                contextPath: '${request.registry.settings['proxy_cit']}monitoring-web/',
-                getApplication: function () {
-                    return {
-                        fireEvent: function (event, featureId, histDate) {
-                            console.log('Monitoring event was fired.');
-                        }
-                    }
-                }
-
-            },
+            proxyNgwUrl = '${request.registry.settings['proxy_ngw']}',
+            proxyScadaUrl = '${request.registry.settings['proxy_scada']}',
             dojoConfig = {
                 isDebug: true,
                 async: true,
