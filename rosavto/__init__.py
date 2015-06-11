@@ -21,7 +21,7 @@ def main(global_config, **settings):
     config.add_route('layers', '/layers')
 
     config.add_route('entels_map', '/')
-    config.add_route('entels_attr', '/entels/scada/')
+    config.add_route('entels_map_full', '/full/')
 
     config.add_route('layer', '/layer')
     config.add_route('marker', '/marker')
