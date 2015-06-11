@@ -7,13 +7,26 @@ html.full-screen #map {
     margin: 0;
 }
 
-#attributesPopup tr, #attributesPopup td {
+#attributesPopup tr,
+#attributesPopup td {
     padding: 1px;
 }
 
 #attributesPopup td {
-    max-width: 200px;
+    padding-bottom: 3px;
+}
+
+#attributesPopup td,
+#attributesPopup td img {
+    max-width: 200px !important;
     word-wrap: break-word;
+}
+
+#attributesPopup tr:nth-child(even) {
+    background: #F2F2F2;
+}
+#attributesPopup tr:nth-child(odd) {
+    background: #FFF;
 }
 
 #map {

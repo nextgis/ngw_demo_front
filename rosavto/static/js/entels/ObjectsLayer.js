@@ -76,6 +76,13 @@ define([
                                 marker.on('click', lang.hitch(this, function (markerClicked) {
                                     this.options.scadaServiceFacade.getAttributesById(markerClicked.target._id)
                                         .then(lang.hitch(this, function (result) {
+                                            var attrs = result.attrs;
+                                            for (var i = 0, l = attrs.length; i < l; i++) {
+                                                var attr = attrs[i];
+                                                if (attr.type) {
+                                                    attrs[i]['is_' + attr.type] = true;
+                                                }
+                                            }
                                             lmap.openPopup(mustache.render(AttributesPopup, result), markerClicked.latlng);
                                         }));
                                     }));
