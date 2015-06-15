@@ -57,6 +57,9 @@ require([
                     'state-wait': {
                         point: {type: 'div', className: 'state-wait', iconSize: [24, 24]}
                     },
+                    'state-0': {
+                        point: {type: 'div', className: 'state-0', iconSize: [24, 24]}
+                    },
                     'state-1': {
                         point: {type: 'div', className: 'state-1', iconSize: [24, 24]}
                     },

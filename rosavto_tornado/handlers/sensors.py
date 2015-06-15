@@ -32,7 +32,7 @@ class SensorsHandler(WebSocketHandler):
             result['objs'].append({
                 'id': guid,
                 'attrs': [
-                    {'name': 'Cod', 'value': str(randint(1, 5)), 'type': 'text'},
+                    {'name': 'Cod', 'value': str(randint(0, 5)), 'type': 'text'},
                     {'name': 'UpdDT', 'value': '-', 'type': 'DT'}
                 ]
             })

@@ -2,6 +2,10 @@
     background-image: url("icons/wait.png");
 }
 
+#map div.leaflet-marker-pane div.state-0 {
+    background-image: url("icons/0.png");
+}
+
 #map div.leaflet-marker-pane div.state-1 {
     background-image: url("icons/1.png");
 }

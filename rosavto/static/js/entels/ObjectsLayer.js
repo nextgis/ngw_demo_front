@@ -29,6 +29,7 @@ define([
 
         states: {
             'state-wait': 'Ожидаем связь...',
+            'state-0': null,
             'state-1': 'SCADA: неопределенная ошибка',
             'state-2': 'SCADA: нет связи с сервером телеметрии',
             'state-3': 'SCADA: неопределенное состояние',
@@ -155,7 +156,6 @@ define([
 
         _ws: null,
         _subscribeObjectStatuses: function (guidsObjs) {
-            //var wsUrl = 'ws://m2m.smart-grid.ru:82';
             var ws = new WebSocket(scadaWebSockectUrl),
                 guids = guidsObjs || obj.keys(this.layersById).join(',');
 
@@ -183,13 +183,13 @@ define([
             });
 
             ws.onopen = lang.hitch(this, function () {
-                console.log('opening...');
+                if (this.options.debug) console.log('opening...');
                 ws.send('GET_NEW ' + guids);
             });
 
             ws.onerror = function (error) {
-                console.log('WEbSocket error ' + error);
-                console.dir(error);
+                if (this.options.debug) console.log('WEbSocket error ' + error);
+                if (this.options.debug) console.dir(error);
             };
         },
 
