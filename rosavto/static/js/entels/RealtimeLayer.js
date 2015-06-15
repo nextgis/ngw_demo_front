@@ -10,7 +10,7 @@ define([
     'dojox/uuid/generateRandomUuid',
     'dojo/query',
     'dojo/_base/array',
-    'leaflet/leaflet',
+    'leaflet/leaflet-src',
     'dojo/topic'
 ], function (declare, lang, on, StyledGeoJsonLayer, Constants, StompClient, object, uuid, generateRandomUuid, query, array, L, topic) {
     var RealtimeLayer = declare('entels.RealtimeLayer', [StyledGeoJsonLayer], {

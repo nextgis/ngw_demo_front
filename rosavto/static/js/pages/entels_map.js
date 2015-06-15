@@ -52,19 +52,25 @@ require([
                 map: map,
                 layerKeyname: 'objects',
                 fieldId: 'SCADA_ID',
+                typeFieldName: '',
                 styles: {
-                    'wait': {
-                        point: {type: 'div', className: 'wait', iconSize: [24, 24]},
-                        tooltip: '<b>Статус:</b> Ожидаем связи...',
-                        line: {}
+                    'state-wait': {
+                        point: {type: 'div', className: 'state-wait', iconSize: [24, 24]}
                     },
-                    'no_connect': {
-                        point: {type: 'div', className: 'no_connect'},
-                        line: {}
+                    'state-1': {
+                        point: {type: 'div', className: 'state-1', iconSize: [24, 24]}
                     },
-                    'test': {
-                        point: {'type': 'circle', 'radius': 3, 'style': {'opacity': 1, 'fillOpacity': 1, 'weight': 1, 'color': '#730000', 'fillColor': '#C92626'}},
-                        line: {}
+                    'state-2': {
+                        point: {type: 'div', className: 'state-2', iconSize: [24, 24]}
+                    },
+                    'state-3': {
+                        point: {type: 'div', className: 'state-3', iconSize: [24, 24]}
+                    },
+                    'state-4': {
+                        point: {type: 'div', className: 'state-4', iconSize: [24, 24]}
+                    },
+                    'state-5': {
+                        point: {type: 'div', className: 'state-5', iconSize: [24, 24]}
                     }
                 },
                 scadaServiceFacade: scadaServiceFacade,

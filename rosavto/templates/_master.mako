@@ -35,15 +35,16 @@
     var application_root = '${request.application_url}',
             proxyNgwUrl = '${request.registry.settings['proxy_ngw']}',
             proxyScadaUrl = '${request.registry.settings['proxy_scada']}',
+            scadaWebSockectUrl = '${request.registry.settings['scada_web_sockects']}',
             dojoConfig = {
                 isDebug: true,
                 async: true,
-                cacheBust: true,
-                baseUrl: "${request.static_url('rosavto:static/js')}",
+##                cacheBust: true,
+                baseUrl: '${request.static_url('rosavto:static/js')}',
                 packages: [
-                    {name: "rosavto", location: 'rosavto'},
-                    {name: "proj4js", location: 'proj4js'},
-                    {name: "mustache", location: 'mustache'},
+                    {name: 'rosavto', location: 'rosavto'},
+                    {name: 'proj4js', location: 'proj4js'},
+                    {name: 'mustache', location: 'mustache'},
                     {name: 'leaflet', location: 'leaflet'},
                     {name: 'centreit', location: 'centreit'},
                     {name: 'stomp', location: 'stomp'},
@@ -51,8 +52,8 @@
                     {name: 'entels', location: 'entels'}
                 ],
                 has: {
-                    "dojo-firebug": true,
-                    "dojo-debug-messages": true
+                    'dojo-firebug': true,
+                    'dojo-debug-messages': true
                 }
             };
 </script>
