@@ -43,7 +43,9 @@ define([
             StyledGeoJsonLayer.prototype.onAdd.call(this, map);
             this._hookMap(map);
             this._buildObjects().then(lang.hitch(this, function (guids) {
-                this._subscribeObjectStatuses(guids);
+                if (this._checkWebSocketSupport()) {
+                    this._subscribeObjectStatuses(guids);
+                }
             }));
         },
 
@@ -130,7 +132,6 @@ define([
                 .then(lang.hitch(this, function (objectsGeometry) {
                     var guids = [];
 
-//                    this.clearLayers();
                     for (var i = 0, count = objectsGeometry.features.length; i < count; i++) {
                         var objectProps = objectsGeometry.features[i].properties,
                             object_guid = objectProps[this.options.fieldId];
@@ -152,6 +153,15 @@ define([
                 }));
 
             return deferred.promise;
+        },
+
+        _checkWebSocketSupport: function () {
+            if (typeof(WebSocket) !== 'function') {
+                alert('Ваш браузер не поддерживает веб-сокеты! Функциональность ограничена.');
+                return false;
+            } else {
+                return true;
+            }
         },
 
         _ws: null,
