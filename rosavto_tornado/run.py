@@ -15,8 +15,8 @@ if args.ini_config:
     config_uri = args.ini_config
     setup_logging(config_uri)
     settings = get_appsettings(config_uri)
-    engine = engine_from_config(settings, 'sqlalchemy.')
-    DBSession.configure(bind=engine)
+    # engine = engine_from_config(settings, 'sqlalchemy.')
+    # DBSession.configure(bind=engine)
     app.listen(settings['tornado.port'])
     tornado.ioloop.IOLoop.instance().start()
 else:
