@@ -1,5 +1,23 @@
-#map div.leaflet-marker-pane div.wait {
-    width: 32px;
-    height: 32px;
+#map div.leaflet-marker-pane div.state-wait {
     background-image: url("icons/wait.png");
+}
+
+#map div.leaflet-marker-pane div.state-1 {
+    background-image: url("icons/1.png");
+}
+
+#map div.leaflet-marker-pane div.state-2 {
+    background-image: url("icons/2.png");
+}
+
+#map div.leaflet-marker-pane div.state-3 {
+    background-image: url("icons/3.png");
+}
+
+#map div.leaflet-marker-pane div.state-4 {
+    background-image: url("icons/4.png");
+}
+
+#map div.leaflet-marker-pane div.state-5 {
+    background-image: url("icons/5.png");
 }
