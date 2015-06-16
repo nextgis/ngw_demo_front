@@ -24,30 +24,26 @@ requires = [
     'sockjs-tornado'
 ]
 
-setup(name='rosavto',
+setup(name='entels_demo',
       version='0.0',
-      description='rosavto',
+      description='Entels demo widget',
       long_description=README + '\n\n' + CHANGES,
       classifiers=[
-          "Programming Language :: Python",
-          "Framework :: Pyramid",
+          "Programming Language :: Python, Javascript",
+          "Framework :: Pyramid, Dojo, Leaflet",
           "Topic :: Internet :: WWW/HTTP",
           "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
       ],
       author='NextGIS',
       author_email='info@nextgis.ru',
       url='https://github.com/nextgis/ngw_demo_front',
-      keywords='web wsgi pylons pyramid widgets NextGIS Web',
+      keywords='web wsgi pylons pyramid widgets NextGIS Web dojo leaflet',
       packages=find_packages(),
       include_package_data=True,
       zip_safe=False,
-      test_suite='rosavto',
       install_requires=requires,
       entry_points="""\
       [paste.app_factory]
-      main = rosavto:main
-      [console_scripts]
-      initialize_rosavto_db = rosavto.initializedb.initializedb:main
-      ways_exporter = rosavto.initializedb.ways_exporter:main
+      main = entels_demo:main
       """,
       )
