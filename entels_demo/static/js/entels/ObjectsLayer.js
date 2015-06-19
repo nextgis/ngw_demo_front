@@ -110,10 +110,15 @@ define([
                                 }
                             }
                             lmap.openPopup(mustache.render(AttributesPopupTemplate, result), markerClicked.latlng);
+                        }), lang.hitch(this, function (error) {
+                            lmap.openPopup(this.options.popupErrorMessage, markerClicked.latlng);
+                            if (this.options.debug) {
+                                console.log(this.options.popupErrorMessage);
+                                console.log(error);
+                            }
                         }));
                 }));
             }, this);
-
         },
 
         _buildObjects: function () {
@@ -154,7 +159,7 @@ define([
 
         _checkWebSocketSupport: function () {
             if (typeof(WebSocket) !== 'function') {
-                alert('Ваш браузер не поддерживает веб-сокеты! Функциональность ограничена.');
+                alert(this.options.wsSupportErrorMessage);
                 return false;
             } else {
                 return true;
