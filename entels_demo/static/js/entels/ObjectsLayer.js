@@ -5,6 +5,7 @@ define([
     'dojo/request/xhr',
     'dojo/i18n',
     'dojo/Deferred',
+    'dojo/string',
     'dojox/lang/functional/object',
     'entels/StyledGeoJsonLayer',
     'entels/ParametersVerification',
@@ -12,7 +13,7 @@ define([
     'dojo/text!entels/templates/Tooltip.html',
     'dojo/text!entels/templates/AttributesPopup.html',
     'dojo/i18n!./nls/ObjectsLayer'
-], function (declare, lang, array, xhr, i18n, Deferred, obj, StyledGeoJsonLayer,
+], function (declare, lang, array, xhr, i18n, Deferred, string, obj, StyledGeoJsonLayer,
              ParametersVerification, mustache, TooltipTemplate, AttributesPopupTemplate) {
     return declare('entels.ObjectsLayer', [StyledGeoJsonLayer, ParametersVerification], {
         constructor: function () {
@@ -82,8 +83,13 @@ define([
 
         _markerLayerBindEvents: function (markerLayer, objectProps, state) {
             var markers = this.getMarkers(markerLayer),
-                lmap = this.options.map._lmap;
+                lmap = this.options.map._lmap,
+                currentDate = new Date(),
+                currentTime = string.pad(currentDate.getHours(), 2) + ':' +
+                    string.pad(currentDate.getMinutes(), 2) + ':' +
+                    string.pad(currentDate.getSeconds(), 2);
             objectProps.state = this.states[state];
+            objectProps.lastTime = currentTime;
             array.forEach(markers, function (marker) {
                 var id = objectProps[this.options.fieldId];
                 marker._id = id;
