@@ -23,19 +23,10 @@ define([
                 'map',
                 'layerKeyname',
                 'scadaServiceFacade',
-                'fieldId'
+                'fieldId',
+                'states'
             ]);
             this._objects_layer_id = this.options.layersInfo.getLayersDictByKeyname()[this.options.layerKeyname].layer_id;
-        },
-
-        states: {
-            'state-wait': 'Ожидаем связь...',
-            'state-0': null,
-            'state-1': 'SCADA: неопределенная ошибка',
-            'state-2': 'SCADA: нет связи с сервером телеметрии',
-            'state-3': 'SCADA: неопределенное состояние',
-            'state-4': 'SCADA: нет связи с объектом',
-            'state-5': 'SCADA: есть связь с объектом'
         },
 
         tooltips: {},
@@ -88,7 +79,7 @@ define([
                 currentTime = string.pad(currentDate.getHours(), 2) + ':' +
                     string.pad(currentDate.getMinutes(), 2) + ':' +
                     string.pad(currentDate.getSeconds(), 2);
-            objectProps.state = this.states[state];
+            objectProps.state = this.options.states[state];
             objectProps.lastTime = currentTime;
             array.forEach(markers, function (marker) {
                 var id = objectProps[this.options.fieldId];
@@ -147,8 +138,8 @@ define([
                         }
 
                         guids.push(object_guid);
-                        var markerLayer = this.addObject(objectsGeometry.features[i], 'state-wait', objectsGeometry.features[i].properties['SCADA_ID']);
-                        this._markerLayerBindEvents(markerLayer, objectProps, 'state-wait');
+                        var markerLayer = this.addObject(objectsGeometry.features[i], '-1', objectsGeometry.features[i].properties['SCADA_ID']);
+                        this._markerLayerBindEvents(markerLayer, objectProps, '-1');
                     }
 
                     if (this._ws) {
@@ -188,7 +179,7 @@ define([
                         id = obj.id;
                         array.forEach(obj.attrs, function (attr) {
                             if (attr.name === 'Cod') {
-                                this._changeStyle(id, 'state-' + attr.value);
+                                this._changeStyle(id, attr.value);
                             }
                         }, this);
                     }
