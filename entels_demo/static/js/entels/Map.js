@@ -8,7 +8,7 @@ define([
     'dojo/topic',
     'dojox/lang/functional/object',
     'entels/Constants',
-    'leaflet/leaflet-src'
+    'leaflet/leaflet'
 ], function (query, declare, lang, array, xhr, Loader, topic, object, Constants) {
     return declare('entels.Map', [Loader], {
         _lmap: {},

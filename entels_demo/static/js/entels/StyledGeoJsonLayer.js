@@ -1,6 +1,6 @@
 define([
     'dojo/_base/declare',
-    'leaflet/leaflet-src'
+    'leaflet/leaflet'
 ], function (declare) {
     return declare('entels.StyledGeoJsonLayer', [L.GeoJSON], {
 
