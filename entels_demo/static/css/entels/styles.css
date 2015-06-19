@@ -25,6 +25,7 @@ html.full-screen #map {
 #attributesPopup tr:nth-child(even) {
     background: #F2F2F2;
 }
+
 #attributesPopup tr:nth-child(odd) {
     background: #FFF;
 }
@@ -55,3 +56,12 @@ html.full-screen #map {
 #map label {
     color: #000000;
 }
+
+#map div.popup-title {
+    font-size: 14px;
+    margin-bottom: 6px;
+    text-align: center;
+    padding: 3px 0;
+    background-color: #c9c9c9;
+}
+
