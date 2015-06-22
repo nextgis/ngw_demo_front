@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="${request.static_url('entels_demo:static/css/entels/styles.css')}"/>
     <link rel="stylesheet"
           href="${request.static_url('entels_demo:static/js/leaflet/leaflet.tooltip/leaflet.tooltip.css')}"/>
+    <link rel="stylesheet" href="${request.static_url('entels_demo:static/contrib/prismjs/prism.css')}"/>
     <%block name="css"/>
 </head>
 <body id="NxgDemo">
@@ -47,7 +48,7 @@
                 }
             };
 </script>
-
+<script src="${request.static_url('entels_demo:static/contrib/prismjs/prism.js')}"></script>
 <script src="//ajax.googleapis.com/ajax/libs/dojo/1.9.7/dojo/dojo.js"></script>
 <%block name="inlineScripts"/>
 </html>
