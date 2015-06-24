@@ -64,7 +64,7 @@ require([
                     '5': 'SCADA: есть связь с объектом'
                 },
                 styles: {
-                    '-1': {
+                    'wait': {
                         point: {type: 'div', className: 'state-wait', iconSize: [24, 24]}
                     },
                     '0': {

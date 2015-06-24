@@ -143,8 +143,8 @@ define([
                         }
 
                         guids.push(object_guid);
-                        var markerLayer = this.addObject(objectsGeometry.features[i], '-1', objectsGeometry.features[i].properties['SCADA_ID']);
-                        this._markerLayerBindEvents(markerLayer, objectProps, '-1');
+                        var markerLayer = this.addObject(objectsGeometry.features[i], 'wait', objectsGeometry.features[i].properties['SCADA_ID']);
+                        this._markerLayerBindEvents(markerLayer, objectProps, 'wait');
                     }
 
                     if (this._ws) {
