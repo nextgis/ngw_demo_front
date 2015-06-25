@@ -8,4 +8,7 @@ def entels_map(request):
 
 @view_config(route_name='entels_map_full', renderer='entels/map_full_screen.mako')
 def map_full_screen(request):
-    return {}
+    lang = request.matchdict['lang']
+    return {
+        'lang': lang
+    }

@@ -17,7 +17,7 @@
     <%block name="css"/>
 </head>
 <body id="NxgDemo">
-    <%block name="content"/>
+        <%block name="content"/>
 </body>
 
 <script type="text/javascript"
@@ -40,7 +40,8 @@
                 packages: [
                     {name: 'mustache', location: 'mustache'},
                     {name: 'leaflet', location: 'leaflet'},
-                    {name: 'entels', location: 'entels'}
+                    {name: 'entels', location: 'entels'},
+                    {name: 'pages', location: 'pages'}
                 ],
                 has: {
                     'dojo-firebug': true,
@@ -50,5 +51,5 @@
 </script>
 <script src="${request.static_url('entels_demo:static/contrib/prismjs/prism.js')}"></script>
 <script src="//ajax.googleapis.com/ajax/libs/dojo/1.9.7/dojo/dojo.js"></script>
-<%block name="inlineScripts"/>
+    <%block name="inlineScripts"/>
 </html>
