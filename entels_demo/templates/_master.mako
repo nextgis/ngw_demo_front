@@ -29,6 +29,7 @@
 
 <script>
     var application_root = '${request.application_url}',
+            application_lang = '${lang}',
             proxyNgwUrl = '${request.registry.settings['proxy_ngw']}',
             proxyScadaUrl = '${request.registry.settings['proxy_scada']}',
             scadaWebSockectUrl = '${request.registry.settings['scada_web_sockects']}',

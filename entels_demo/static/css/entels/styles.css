@@ -65,3 +65,59 @@ html.full-screen #map {
     background-color: #c9c9c9;
 }
 
+#map div.lang-selector {
+    display: none;
+}
+
+#map.leaflet-container div.lang-selector {
+    display: block;
+}
+
+#map div.lang-selector div.collapsed {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url("background/languages-icon.png");
+}
+#map div.lang-selector div.opened {
+    display: none;
+}
+
+#map div.lang-selector:hover div.collapsed {
+    display: none;
+}
+#map div.lang-selector:hover div.opened {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#map div.lang-selector {
+    position: absolute;
+    z-index: 999999;
+    top: 3px;
+    right: 3px;
+    border: 1px solid #c7c7c7;
+    background-color: white;
+    padding: 2px;
+}
+
+#map div.lang-selector a {
+    display: block;
+    padding: 3px;
+    border: 1px solid #b5b5b5;
+    margin: 3px;
+    background-color: #f4f4f4;
+    color: #818181;
+    font-size: 12px;
+}
+
+#map div.lang-selector a.selected {
+    background-color: #d5d5d5;
+    color: #5d5d5d;
+}
+
+#map div.lang-selector a:hover {
+    background-color: #d5d5d5;
+}
+

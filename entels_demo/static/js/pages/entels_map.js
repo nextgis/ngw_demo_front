@@ -20,7 +20,7 @@ require([
                 center: [55.529, 37.584],
                 zoom: 7,
                 zoomControl: true,
-                legend: true,
+                legend: false,
                 easyPrint: false
             }),
             layersInfo;

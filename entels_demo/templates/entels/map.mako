@@ -9,15 +9,16 @@
             <div class="row">
                 <div id="map">
                     <p class="loaded-status">Построение демо-карты...</p>
+                    <%include file="../_languages.mako"/>
                 </div>
-                <p><a href="${request.route_url('entels_map_full')}">Открыть на весь экран &rarr;</a></p>
+                <p><a href="${request.route_url('entels_map_full', lang='ru')}">Открыть на весь экран &rarr;</a></p>
             </div>
             <div id="nav_source_code" class="row scrollspy">
                 <div class="row">
                     <h3 class="col s12 header">Пример кода</h3>
                 </div>
                 <div class="row">
-                <pre data-src="${request.static_url('entels_demo:static/js/pages/' + request.matched_route.name + '.js')}"
+                <pre data-src="${request.static_url('entels_demo:static/js/pages/entels_map.js')}"
                      class="line-numbers">
                 </pre>
                 </div>
@@ -27,5 +28,5 @@
 </div>
 
 <%block name="inlineScripts">
-    <script src="${request.static_url('entels_demo:static/js/pages/' + request.matched_route.name + '.js')}"></script>
+    <script src="${request.static_url('entels_demo:static/js/pages/entels_map.js')}"></script>
 </%block>
