@@ -35,7 +35,7 @@ require([
         layersInfo.fillLayersInfo().then(function (store) {
 
             // Подключаем подложку Openstreetmap
-            map.addOsmTileLayer();
+            map.addTileLayer('OSM', 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 
             // Создаем слой объектов
             var l = new ObjectsLayer(null, {
