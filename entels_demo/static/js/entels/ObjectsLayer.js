@@ -10,9 +10,8 @@ define([
     'entels/StyledGeoJsonLayer',
     'entels/ParametersVerification',
     'mustache/mustache',
-    'dojo/text!entels/templates/Tooltip.html',
-    'dojo/text!entels/templates/AttributesPopup.html',
-    'dojo/i18n!./nls/ObjectsLayer'
+    'dojo/text!entels/templates/' + application_lang + '/Tooltip.html',
+    'dojo/text!entels/templates/' + application_lang + '/AttributesPopup.html'
 ], function (declare, lang, array, xhr, i18n, Deferred, string, obj, StyledGeoJsonLayer,
              ParametersVerification, mustache, TooltipTemplate, AttributesPopupTemplate) {
     return declare('entels.ObjectsLayer', [StyledGeoJsonLayer, ParametersVerification], {

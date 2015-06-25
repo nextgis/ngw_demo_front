@@ -8,8 +8,9 @@ require([
         // Модуль фасада к сервисам Scada
         'entels/ScadaServiceFacade',
         'entels/ObjectsLayer',
+        'pages/entels_map/' + application_lang,
         'dojo/domReady!'],
-    function (Map, LayersInfo, NgwServiceFacade, ScadaServiceFacade, ObjectsLayer) {
+    function (Map, LayersInfo, NgwServiceFacade, ScadaServiceFacade, ObjectsLayer, translates) {
             // Создаем и конфигурируем фасад к сервисам NGW
         var ngwServiceFacade = new NgwServiceFacade(proxyNgwUrl),
             // Задаем фасад к сервисам Scada
@@ -55,13 +56,13 @@ require([
                 // Перечень возможный состояний
                 // Название состояния идет после state-
                 states: {
-                    'wait': 'Ожидаем связь...',
+                    'wait': translates['wait'],
                     '0': null,
-                    '1': 'SCADA: неопределенная ошибка',
-                    '2': 'SCADA: нет связи с сервером телеметрии',
-                    '3': 'SCADA: неопределенное состояние',
-                    '4': 'SCADA: нет связи с объектом',
-                    '5': 'SCADA: есть связь с объектом'
+                    '1': translates['1'],
+                    '2': translates['2'],
+                    '3': translates['3'],
+                    '4': translates['4'],
+                    '5': translates['5']
                 },
                 styles: {
                     'wait': {
@@ -89,10 +90,10 @@ require([
                 // Сообщение в попапе
                 // при ошибке соединения
                 // со SCADA сервисом атрибутов
-                popupErrorMessage: 'Ошибка подключения к SCADA серверу',
+                popupErrorMessage: translates.popupErrorMessage,
                 // Сообщение в случае, когда
                 // браузер не поддерживает WS
-                wsSupportErrorMessage: 'Ваш браузер не поддерживает веб-сокеты! Функциональность ограничена.',
+                wsSupportErrorMessage: translates.wsSupportErrorMessage,
                 debug: true
             });
 

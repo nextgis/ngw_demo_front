@@ -1,0 +1,29 @@
+
+<div class="popup-title">
+    <b>{{TITLE}}</b><br/>
+    <b>{{SUBTITLE}}</b>
+</div>
+<table id="attributesPopup">
+    {{#attrs}}
+        {{#is_text}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{value}}</td>
+        </tr>
+        {{/is_text}}
+
+        {{#is_URL}}
+        <tr>
+            <td>External reference</td>
+            <td><a href="{{value}}">{{name}}</a></td>
+        </tr>
+        {{/is_URL}}
+
+        {{#is_URL_IMG}}
+        <tr>
+            <td>{{name}}</td>
+            <td><img src="{{value}}" name="{{name}}"/></td>
+        </tr>
+        {{/is_URL_IMG}}
+    {{/attrs}}
+</table>
