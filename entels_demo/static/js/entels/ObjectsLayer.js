@@ -157,7 +157,7 @@ define([
         },
 
         _checkWebSocketSupport: function () {
-            if (typeof(WebSocket) !== 'function') {
+            if (typeof(WebSocket) !== 'function' && typeof(WebSocket) !== 'object') {
                 alert(this.options.wsSupportErrorMessage);
                 return false;
             } else {
