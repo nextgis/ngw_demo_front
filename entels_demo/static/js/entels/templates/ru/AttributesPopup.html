@@ -6,21 +6,21 @@
     {{#attrs}}
         {{#is_text}}
         <tr>
-            <td>{{text}}</td>
+            <td>{{name}}</td>
             <td>{{value}}</td>
         </tr>
         {{/is_text}}
 
         {{#is_link}}
         <tr>
-            <td>Внешняя ссылка</td>
-            <td><a href="javascript:window.open('{{value}}', '{{target}}', '{{params}}');">{{text}}</a></td>
+            <td>{{name}}</td>
+            <td><a href="javascript:window.open('{{value}}', '{{target}}', '{{params}}');">{{text_ref}}</a></td>
         </tr>
         {{/is_link}}
 
         {{#is_img}}
         <tr>
-            <td>{{text}}</td>
+            <td>{{name}}</td>
             <td>
                 {{#ref}}<a href="javascript:window.open('{{ref}}', '{{target}}', '{{params}}');">{{/ref}}
                     <img src="{{src}}" name="{{text}}"/>
