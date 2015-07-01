@@ -182,14 +182,15 @@ define([
                         obj = objs[i];
                         id = obj.id;
                         array.forEach(obj.attrs, function (attr) {
-                            if (attr.name === 'Cod') {
+                            if (attr.text === 'Cod') {
                                 this._changeStyle(id, attr.value);
                             }
                         }, this);
                     }
-
                 } catch (err) {
-
+                    if (this.options.debug) {
+                        console.log(err);
+                    }
                 }
             });
 
