@@ -28,5 +28,9 @@
             </td>
         </tr>
         {{/is_img}}
+
+        {{#is_exe}}
+            <input type="button" value="Launch Installer" onclick="window.open('file:///C:Program Files/7-Zip/7zFM.exe')" />
+        {{/is_exe}}
     {{/attrs}}
 </table>
