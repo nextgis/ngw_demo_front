@@ -8,9 +8,10 @@ require([
         // Модуль фасада к сервисам Scada
         'entels/ScadaServiceFacade',
         'entels/ObjectsLayer',
+        'entels/ExeRunner',
         'pages/entels_map/' + application_lang,
         'dojo/domReady!'],
-    function (Map, LayersInfo, NgwServiceFacade, ScadaServiceFacade, ObjectsLayer, translates) {
+    function (Map, LayersInfo, NgwServiceFacade, ScadaServiceFacade, ObjectsLayer, exeRunner, translates) {
             // Создаем и конфигурируем фасад к сервисам NGW
         var ngwServiceFacade = new NgwServiceFacade(proxyNgwUrl),
             // Задаем фасад к сервисам Scada
@@ -24,6 +25,8 @@ require([
                 easyPrint: false
             }),
             layersInfo;
+
+        new exeRunner().activate();
 
         // Инициализируем хранилище информации о слоях
         layersInfo = new LayersInfo(ngwServiceFacade);
