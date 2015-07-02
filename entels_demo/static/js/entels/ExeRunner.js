@@ -1,7 +1,7 @@
 define([
     'dojo/has',
     'dojo/_base/declare'
-], function (declare, has) {
+], function (has, declare) {
     return declare('entels.ExeRunner', [], {
         constructor: function () {
         },
