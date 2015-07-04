@@ -30,7 +30,10 @@
         {{/is_img}}
 
         {{#is_exe}}
-            <input type="button" value="Launch Installer" onclick="window.runExe('file:///C:Program Files/7-Zip/7zFM.exe')" />
+            <td>{{name}}</td>
+            <td>
+                <input type="button" value="Запустить NextGIS QGIS" onclick="window.runExe('qgis://')" />
+            </td>
         {{/is_exe}}
     {{/attrs}}
 </table>

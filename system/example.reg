@@ -1,0 +1,16 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\PROTOCOL_NAME]
+"FriendlyTypeName"="YOUR_DESCRIPTION"
+@="URL:PROTOCOL_NAME Protocol"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\PROTOCOL_NAME\DefaultIcon]
+@="PATH_TO_EXE_ICON,0"
+
+[HKEY_CLASSES_ROOT\PROTOCOL_NAME\shell]
+
+[HKEY_CLASSES_ROOT\PROTOCOL_NAME\shell\open]
+
+[HKEY_CLASSES_ROOT\PROTOCOL_NAME\shell\open\command]
+@="PATH_TO_EXE @1 - parameter"

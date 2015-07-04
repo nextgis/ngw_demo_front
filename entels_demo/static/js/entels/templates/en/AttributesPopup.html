@@ -28,5 +28,12 @@
             </td>
         </tr>
         {{/is_img}}
+
+        {{#is_exe}}
+            <td>{{name}}</td>
+            <td>
+                <input type="button" value="Launch NextGIS QGIS" onclick="window.runExe('qgis://')" />
+            </td>
+        {{/is_exe}}
     {{/attrs}}
 </table>
