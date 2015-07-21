@@ -1,7 +1,7 @@
 from pyramid.config import Configurator
 from sqlalchemy import engine_from_config
 
-from rosavto.model import Base, DBSession
+from ngw_demo_front.model import Base, DBSession
 
 
 def main(global_config, **settings):
