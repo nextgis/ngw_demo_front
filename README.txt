@@ -1,0 +1,1 @@
+Widgets demo for NextGIS Web
