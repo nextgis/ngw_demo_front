@@ -8,10 +8,6 @@ import os.path as path
 
 from pyramid.view import view_config
 
-
-
-
-
 # @view_config(route_name='map', renderer='map.mako')
 # def map(request):
 #     return {}
