@@ -9,16 +9,16 @@ define([
     'dojo/topic',
     'dojo/dom-class',
     'mustache/mustache',
-    'rosavto/realtime/Subscriber',
-    'rosavto/NgwServiceFacade',
-    'rosavto/Layers/MarkersStateClusterLayer',
-    'rosavto/ParametersVerification',
-    'rosavto/Constants',
+    'ngw_demo_front/realtime/Subscriber',
+    'ngw_demo_front/NgwServiceFacade',
+    'ngw_demo_front/Layers/MarkersStateClusterLayer',
+    'ngw_demo_front/ParametersVerification',
+    'ngw_demo_front/Constants',
     'centreit/DragAndDrop'
 ], function (declare, on, query, dom, lang, array, funcObject, topic, domClass, mustache,
              Subscriber, NgwServiceFacade, MarkersStateClusterLayer,
              ParametersVerification, Constants, DnD) {
-    return declare('rosavto.SensorsLayer', [MarkersStateClusterLayer, ParametersVerification], {
+    return declare('ngw_demo_front.SensorsLayer', [MarkersStateClusterLayer, ParametersVerification], {
 
         constructor: function (settings) {
 

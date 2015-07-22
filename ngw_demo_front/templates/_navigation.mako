@@ -1,7 +1,7 @@
 ## -*- coding: utf-8 -*-
 
 <%
-    from rosavto.navigation import pages_config
+    from ngw_demo_front.navigation import pages_config
 %>
 
 <header>
@@ -13,7 +13,7 @@
     <ul id="nav-mobile" class="side-nav fixed">
         <li class="logo">
             <a id="logo-container" href="/" class="brand-logo" title="На главную">
-                <img height="100%" src="${request.static_url('rosavto:static/images/250x250_icon_x_clr_white.png')}"/>
+                <img height="100%" src="${request.static_url('ngw_demo_front:static/images/250x250_icon_x_clr_white.png')}"/>
             </a>
         </li>
         % for nav in pages_config:

@@ -46,7 +46,7 @@
 <div id="attributes">Здесь будут атрибуты выбранного обекта</div>
 
 <%block name="inlineScripts">
-    <link rel="stylesheet" href="${request.static_url('rosavto:static/css/sensors/sensors.css')}"/>
+    <link rel="stylesheet" href="${request.static_url('ngw_demo_front:static/css/sensors/sensors.css')}"/>
     <script>
 
         Monitoring = {
@@ -62,12 +62,12 @@
 
         require([
                     'dojo/dom-class',
-                    'rosavto/Map',
-                    'rosavto/LayersInfo',
-                    'rosavto/MapIdentify',
-                    'rosavto/AttributeGetter',
-                    'rosavto/AttributesServiceFacade',
-                    'rosavto/NgwServiceFacade',
+                    'ngw_demo_front/Map',
+                    'ngw_demo_front/LayersInfo',
+                    'ngw_demo_front/MapIdentify',
+                    'ngw_demo_front/AttributeGetter',
+                    'ngw_demo_front/AttributesServiceFacade',
+                    'ngw_demo_front/NgwServiceFacade',
                     'dojo/domReady!'],
 
                 function (domClass, Map, LayersInfo, MapIdentify, AttributeGetter, AttributesServiceFacade, NgwServiceFacade) {

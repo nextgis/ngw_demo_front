@@ -29,7 +29,7 @@
                 <h3 class="col s12 header">Пример кода</h3>
             </div>
             <div class="row">
-                <pre data-src="${request.static_url('rosavto:static/js/pages/' + request.matched_route.name + '.js')}"
+                <pre data-src="${request.static_url('ngw_demo_front:static/js/pages/' + request.matched_route.name + '.js')}"
                      class="line-numbers">
                 </pre>
             </div>
@@ -48,5 +48,5 @@
 </div>
 
 <%block name="inlineScripts">
-    <script src="${request.static_url('rosavto:static/js/pages/' + request.matched_route.name + '.js')}"></script>
+    <script src="${request.static_url('ngw_demo_front:static/js/pages/' + request.matched_route.name + '.js')}"></script>
 </%block>

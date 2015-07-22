@@ -5,7 +5,7 @@ define([
     'dojo/topic',
     'leaflet/leaflet'
 ], function (declare, lang, array, topic, L) {
-    return declare('rosavto.MarkersStateClusterLayer', [L.MarkerClusterGroup], {
+    return declare('ngw_demo_front.MarkersStateClusterLayer', [L.MarkerClusterGroup], {
         _layer: null,
         _states: {
             states: null,

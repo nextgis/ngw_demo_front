@@ -2,8 +2,8 @@ define([
     'dojo/_base/declare',
     'dojo/_base/lang',
     "dojo/on",
-    'rosavto/Layers/StyledGeoJsonLayer',
-    'rosavto/Constants',
+    'ngw_demo_front/Layers/StyledGeoJsonLayer',
+    'ngw_demo_front/Constants',
     'centreit/StompClient',
     'centreit/DragAndDrop',
     'dojox/lang/functional/object',
@@ -14,7 +14,7 @@ define([
     'leaflet/leaflet',
     'dojo/topic'
 ], function (declare, lang, on, StyledGeoJsonLayer, Constants, StompClient, DnD, object, uuid, generateRandomUuid, query, array, L, topic) {
-    var RealtimeLayer = declare('rosavto.RealtimeLayer', [StyledGeoJsonLayer], {
+    var RealtimeLayer = declare('ngw_demo_front.RealtimeLayer', [StyledGeoJsonLayer], {
         _debug: false,
         markerZIndexOffset: {
             GRAY: 1000,

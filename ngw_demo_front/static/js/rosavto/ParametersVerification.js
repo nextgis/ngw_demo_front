@@ -1,6 +1,6 @@
 define(['dojo/_base/declare'],
     function (declare) {
-        return declare('rosavto.ParametersVerification', null, {
+        return declare('ngw_demo_front.ParametersVerification', null, {
             verificateRequiredParameters: function (settings, arrayParameters) {
                 var countVerificatedParameters = arrayParameters.length,
                     i = 0,

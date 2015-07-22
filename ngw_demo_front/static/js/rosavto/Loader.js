@@ -3,7 +3,7 @@ define([
     'dojox/widget/Standby'
 ],
     function (declare, Standby) {
-        return declare('rosavto.Loader', null, {
+        return declare('ngw_demo_front.Loader', null, {
             _standby: null,
 
             buildLoader: function (domNode) {

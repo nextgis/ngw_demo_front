@@ -8,15 +8,15 @@ define([
         'dojo/request/xhr',
         'dojo/Deferred',
         'dojo/DeferredList',
-        'rosavto/MapIdentify',
-        'rosavto/NgwServiceFacade',
-        'rosavto/ParametersVerification',
-        'rosavto/Loader',
-        'rosavto/Layers/StyledGeoJsonLayer',
-        'rosavto/Constants'
+        'ngw_demo_front/MapIdentify',
+        'ngw_demo_front/NgwServiceFacade',
+        'ngw_demo_front/ParametersVerification',
+        'ngw_demo_front/Loader',
+        'ngw_demo_front/Layers/StyledGeoJsonLayer',
+        'ngw_demo_front/Constants'
     ],
     function (declare, array, lang, dojo, html, topic, xhr, Deferred, DeferredList, MapIdentify, NgwServiceFacade, ParametersVerification, Loader, StyledGeoJsonLayer, Constants) {
-        return declare('rosavto.AttributeGetter', [Loader, ParametersVerification], {
+        return declare('ngw_demo_front.AttributeGetter', [Loader, ParametersVerification], {
             _styledGeoJsonLayer: null,
 
             constructor: function (settings) {

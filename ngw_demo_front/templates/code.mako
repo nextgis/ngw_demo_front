@@ -30,8 +30,8 @@
     <pre>
         Код для инициализации карты:
         <code class="javascript">
-            // Загружаем модуль <a href="${request.static_url('rosavto:static/js/rosavto/Map.js')}">rosavto/Map</a> после готовности DOM дерева
-            require(['rosavto/Map', 'dojo/domReady!'], function (Map) {
+            // Загружаем модуль <a href="${request.static_url('ngw_demo_front:static/js/ngw_demo_front/Map.js')}">ngw_demo_front/Map</a> после готовности DOM дерева
+            require(['ngw_demo_front/Map', 'dojo/domReady!'], function (Map) {
                 var map = new Map('map', {
                         center: [56.8225, 35.9116], // Задаем центр
                         zoom: 11 // Указываем начальный зум
@@ -87,12 +87,12 @@
         Код для инициализации механизма получения атрибутивных данные по клику карты:
         <code class="javascript">
         require([ // Загружаем модуль необходимые модули после готовности DOM дерева
-        'rosavto/Map',
-        'rosavto/LayersInfo',
-        'rosavto/MapIdentify',
-        'rosavto/AttributeGetter',
-        'rosavto/AttributesServiceFacade',
-        'rosavto/NgwServiceFacade',
+        'ngw_demo_front/Map',
+        'ngw_demo_front/LayersInfo',
+        'ngw_demo_front/MapIdentify',
+        'ngw_demo_front/AttributeGetter',
+        'ngw_demo_front/AttributesServiceFacade',
+        'ngw_demo_front/NgwServiceFacade',
         'dojo/domReady!'],
 
         function (Map, LayersInfo, MapIdentify, AttributeGetter, AttributesServiceFacade, NgwServiceFacade) {
@@ -159,8 +159,8 @@
         // Подключаем необходимые модули
         require([
             'dojo/DeferredList',
-            'rosavto/Map', // Модуль, инкапсулирующий карту
-            'rosavto/NgwServiceFacade', // Фасад к сервисам NextGIS Web
+            'ngw_demo_front/Map', // Модуль, инкапсулирующий карту
+            'ngw_demo_front/NgwServiceFacade', // Фасад к сервисам NextGIS Web
             'dojo/domReady!'],
 
         function (DeferredList, Map, NgwServiceFacade) {
@@ -243,8 +243,8 @@
         Код для построения слоя кластеров с учетом состояния отдельных объектов:
         <code class="javascript">
         require([
-            'rosavto/Map', // Модуль карты
-            'rosavto/Layers/MarkersStateClusterLayer', // Слой кластеров
+            'ngw_demo_front/Map', // Модуль карты
+            'ngw_demo_front/Layers/MarkersStateClusterLayer', // Слой кластеров
             'dojo/domReady!'],
                 function (Map, MarkersStateClusterLayer) {
                             // Создаем карту
@@ -311,8 +311,8 @@
         Код для добавления слоя с маршрутом между заданными точками, с точкой ограничения:
         <code class="javascript">
 require([
-            'rosavto/Map',
-            'rosavto/NgwServiceFacade',
+            'ngw_demo_front/Map',
+            'ngw_demo_front/NgwServiceFacade',
             'dojo/domReady!'
         ], function (Map, NgwServiceFacade) {
 
@@ -323,17 +323,17 @@ require([
             var ngwServiceFacade = new NgwServiceFacade(ngwProxyUrl);
 
             //создаем маркеры
-            var startIcon = L.icon({iconUrl: "${request.static_url('rosavto:static/start-point.png')}",
+            var startIcon = L.icon({iconUrl: "${request.static_url('ngw_demo_front:static/start-point.png')}",
                 iconSize: [32, 37],
                 iconAnchor: [16, 36],
                 popupAnchor: [0, -35]
             });
-            var finishIcon = L.icon({iconUrl: "${request.static_url('rosavto:static/finish-point.png')}",
+            var finishIcon = L.icon({iconUrl: "${request.static_url('ngw_demo_front:static/finish-point.png')}",
                 iconSize: [32, 37],
                 iconAnchor: [16, 36],
                 popupAnchor: [0, -35]
             });
-            var barIcon = L.icon({iconUrl: "${request.static_url('rosavto:static/barrier-point.png')}",
+            var barIcon = L.icon({iconUrl: "${request.static_url('ngw_demo_front:static/barrier-point.png')}",
                 iconSize: [32, 37],
                 iconAnchor: [16, 36],
                 popupAnchor: [0, -35]

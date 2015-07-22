@@ -9,16 +9,16 @@ define([
         'dojo/Deferred',
         'dojo/DeferredList',
         'centreit/DragAndDrop',
-        'rosavto/MapIdentify',
-        'rosavto/NgwServiceFacade',
-        'rosavto/ParametersVerification',
-        'rosavto/Loader',
-        'rosavto/Layers/StyledGeoJsonLayer',
-        'rosavto/Constants'
+        'ngw_demo_front/MapIdentify',
+        'ngw_demo_front/NgwServiceFacade',
+        'ngw_demo_front/ParametersVerification',
+        'ngw_demo_front/Loader',
+        'ngw_demo_front/Layers/StyledGeoJsonLayer',
+        'ngw_demo_front/Constants'
     ],
     function (declare, array, lang, on, html, topic, xhr, Deferred, DeferredList, DnD, MapIdentify, NgwServiceFacade,
               ParametersVerification, Loader, StyledGeoJsonLayer, Constants) {
-        return declare('rosavto.ObjectSelector', [Loader, ParametersVerification], {
+        return declare('ngw_demo_front.ObjectSelector', [Loader, ParametersVerification], {
             _selectedObjectsLayer: null,
 
             constructor: function (settings) {

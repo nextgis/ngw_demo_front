@@ -7,9 +7,9 @@ define([
     'dojox/lang/functional/object',
     'dojox/uuid/_base',
     'dojox/uuid/generateRandomUuid',
-    'rosavto/ParametersVerification'
+    'ngw_demo_front/ParametersVerification'
 ], function (declare, lang, on, StompClient, DnD, object, uuid, generateRandomUuid, ParametersVerification) {
-    return declare('rosavto.RealtimeLayer', [ParametersVerification], {
+    return declare('ngw_demo_front.RealtimeLayer', [ParametersVerification], {
         _debug: false,
 
         constructor: function (settings) {

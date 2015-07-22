@@ -11,7 +11,7 @@
             </div>
             <div class="row">
                 <a id="download-source" class="btn waves-effect red"
-                   href="https://github.com/nextgis/rosavto">Все примеры одним списком<i
+                   href="https://github.com/nextgis/ngw_demo_front">Все примеры одним списком<i
                         class="mdi-action-view-module left"></i></a>
             </div>
 
@@ -21,15 +21,15 @@
 
                     <p>Исходный код стенда доступен на GitHub.</p>
                     <a id="download-source" class="btn waves-effect waves-light"
-                       href="https://github.com/nextgis/rosavto" target="_blank">Source<i
+                       href="https://github.com/nextgis/ngw_demo_front" target="_blank">Source<i
                             class="mdi-action-settings-ethernet right"></i></a>
 
                     <p>
-                        <iframe src="https://ghbtns.com/github-btn.html?user=nextgis&repo=rosavto&type=star&count=true&size=large"
+                        <iframe src="https://ghbtns.com/github-btn.html?user=nextgis&repo=ngw_demo_front&type=star&count=true&size=large"
                                 frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
                     </p>
                     <p>
-                        <iframe src="https://ghbtns.com/github-btn.html?user=nextgis&repo=rosavto&type=watch&count=true&size=large&v=2"
+                        <iframe src="https://ghbtns.com/github-btn.html?user=nextgis&repo=ngw_demo_front&type=watch&count=true&size=large&v=2"
                                 frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
                     </p>
                 </div>
@@ -65,14 +65,14 @@
 
     </div>
 
-    <!-- Sub-navigation table of contents -->
-    <%
-        sub_navs = [
-            ('nav_description', u'Описание'),
-            ('nav_about', u'О нас')
-        ]
-    %>
-    <%include file='_sub_navigation.mako' args='sub_navs=sub_navs'/>
+##    <!-- Sub-navigation table of contents -->
+##    <%
+##        sub_navs = [
+##            ('nav_description', u'Описание'),
+##            ('nav_about', u'О нас')
+##        ]
+##    %>
+##    <%include file='_sub_navigation.mako' args='sub_navs=sub_navs'/>
 </div>
 
 

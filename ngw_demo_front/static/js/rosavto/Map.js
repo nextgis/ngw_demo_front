@@ -4,15 +4,15 @@ define([
     'dojo/_base/lang',
     'dojo/_base/array',
     'dojo/request/xhr',
-    'rosavto/Loader',
+    'ngw_demo_front/Loader',
     'centreit/StorageProvider',
     'dojo/topic',
     'dojox/lang/functional/object',
-    'rosavto/EasyPrint',
-    'rosavto/Constants',
+    'ngw_demo_front/EasyPrint',
+    'ngw_demo_front/Constants',
     'leaflet/leaflet'
 ], function (query, declare, lang, array, xhr, Loader, storage, topic, object, EasyPrint, Constants) {
-    return declare('rosavto.Map', [Loader], {
+    return declare('ngw_demo_front.Map', [Loader], {
         _lmap: {},
         _baseLayers: {},
         _overlaylayers: {},

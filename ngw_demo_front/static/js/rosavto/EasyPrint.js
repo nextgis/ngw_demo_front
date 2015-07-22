@@ -3,7 +3,7 @@ define([
         'leaflet/leaflet'
 ],
 function (declare) {
-    return declare('rosavto.EasyPrint', null, {
+    return declare('ngw_demo_front.EasyPrint', null, {
         constructor: function () {
             L.Control.EasyPrint = L.Control.extend({
                 options: {

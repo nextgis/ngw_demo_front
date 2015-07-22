@@ -23,12 +23,12 @@
 </pre>
 
 <%block name="inlineScripts">
-    <script src="${request.static_url('rosavto:static/json/stations.js')}"></script>
+    <script src="${request.static_url('ngw_demo_front:static/json/stations.js')}"></script>
 
     <link rel="stylesheet"
-          href="${request.static_url('rosavto:static/js/leaflet/leaflet.markercluster/MarkerCluster.css')}"/>
+          href="${request.static_url('ngw_demo_front:static/js/leaflet/leaflet.markercluster/MarkerCluster.css')}"/>
     <link rel="stylesheet"
-          href="${request.static_url('rosavto:static/js/leaflet/leaflet.markercluster/MarkerCluster.Default.css')}"/>
+          href="${request.static_url('ngw_demo_front:static/js/leaflet/leaflet.markercluster/MarkerCluster.Default.css')}"/>
 
     <style>
         img.leaflet-marker-icon {
@@ -59,10 +59,10 @@
 
     <script>
         require([
-                    'rosavto/Map', // Модуль карты
-                    'rosavto/Layers/MarkersStateClusterLayer', // Слой кластеров
-                    'rosavto/NgwServiceFacade',
-                    'rosavto/LayersInfo',
+                    'ngw_demo_front/Map', // Модуль карты
+                    'ngw_demo_front/Layers/MarkersStateClusterLayer', // Слой кластеров
+                    'ngw_demo_front/NgwServiceFacade',
+                    'ngw_demo_front/LayersInfo',
                     'dojo/query',
                     'dojo/domReady!'],
                 function (Map, MarkersStateClusterLayer, NgwServiceFacade, LayersInfo, query) {

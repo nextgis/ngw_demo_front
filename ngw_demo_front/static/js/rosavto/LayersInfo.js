@@ -12,7 +12,7 @@ define([
         'dojox/xml/parser'
     ],
     function (declare, array, lang, query, attr, Memory, Observable, xhr, Deferred, DeferredList, xmlParser) {
-        return declare('rosavto.LayersInfo', null, {
+        return declare('ngw_demo_front.LayersInfo', null, {
             _filled: false,
             constructor: function (ngwServiceFacade) {
                 if (ngwServiceFacade) {

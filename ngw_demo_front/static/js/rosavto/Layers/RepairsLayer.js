@@ -2,10 +2,10 @@ define([
     'dojo/_base/declare',
     'dojo/_base/lang',
     'dojo/request/xhr',
-    'rosavto/Layers/StyledGeoJsonLayer',
-    'rosavto/ParametersVerification'
+    'ngw_demo_front/Layers/StyledGeoJsonLayer',
+    'ngw_demo_front/ParametersVerification'
 ], function (declare, lang, xhr, StyledGeoJsonLayer, ParametersVerification) {
-    return declare('rosavto.RepairsLayer', [StyledGeoJsonLayer, ParametersVerification], {
+    return declare('ngw_demo_front.RepairsLayer', [StyledGeoJsonLayer, ParametersVerification], {
         constructor: function () {
             this.verificateRequiredParameters(this.options, [
                 'ngwServiceFacade',

@@ -4,13 +4,13 @@
     <title><%block name="title"/></title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
 
-    <link rel="stylesheet" href="${request.static_url('rosavto:static/js/leaflet/leaflet.css')}"/>
-    <link rel="stylesheet" href="${request.static_url('rosavto:static/css/kube.min.css')}"/>
-    <link rel="stylesheet" href="${request.static_url('rosavto:static/css/widget.css')}"/>
+    <link rel="stylesheet" href="${request.static_url('ngw_demo_front:static/js/leaflet/leaflet.css')}"/>
+    <link rel="stylesheet" href="${request.static_url('ngw_demo_front:static/css/kube.min.css')}"/>
+    <link rel="stylesheet" href="${request.static_url('ngw_demo_front:static/css/widget.css')}"/>
 
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/dojo/1.8/dijit/themes/claro/claro.css"/>
 
-    <link rel="stylesheet" href="${request.static_url('rosavto:static/css/main.css')}"/>
+    <link rel="stylesheet" href="${request.static_url('ngw_demo_front:static/css/main.css')}"/>
 
     <script>
         var application_root = '${request.application_url}',
@@ -34,9 +34,9 @@
                 isDebug: true,
                 async: true,
 ##                cacheBust: true,
-                baseUrl: "${request.static_url('rosavto:static/js/')}",
+                baseUrl: "${request.static_url('ngw_demo_front:static/js/')}",
                 packages: [
-                    { name: "rosavto", location: 'rosavto' },
+                    { name: "ngw_demo_front", location: 'ngw_demo_front' },
                     { name: "proj4js", location: 'proj4js' },
                     { name: "mustache", location: 'mustache' },
                     { name: 'leaflet', location: 'leaflet' },
@@ -54,9 +54,9 @@
     <script>hljs.initHighlightingOnLoad();</script>
 
 
-    <script src="${request.static_url('rosavto:static/js/sockjs/sockjs.js')}"></script>
-    <script src="${request.static_url('rosavto:static/js/stomp/stomp.js')}"></script>
-    <script src="${request.static_url('rosavto:static/js/centreit/MonitoringCard.js')}"></script>
+    <script src="${request.static_url('ngw_demo_front:static/js/sockjs/sockjs.js')}"></script>
+    <script src="${request.static_url('ngw_demo_front:static/js/stomp/stomp.js')}"></script>
+    <script src="${request.static_url('ngw_demo_front:static/js/centreit/MonitoringCard.js')}"></script>
 
     <%block name="inlineScripts"/>
 </head>

@@ -1,10 +1,10 @@
 require([
         // Модуль карты
-        'rosavto/Map',
+        'ngw_demo_front/Map',
         // Модуль для заполнения информации о слоях
-        'rosavto/LayersInfo',
+        'ngw_demo_front/LayersInfo',
         // Модуль фасада к сервисам NGW
-        'rosavto/NgwServiceFacade',
+        'ngw_demo_front/NgwServiceFacade',
         'dojo/domReady!'],
 
     function (Map, LayersInfo, NgwServiceFacade) {

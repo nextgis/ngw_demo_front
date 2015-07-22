@@ -1,5 +1,5 @@
 require([
-        'rosavto/Map', // Модуль карты
+        'ngw_demo_front/Map', // Модуль карты
         'dojo/domReady!'],
     function (Map) {
         // Создаем и конфигурируем карту

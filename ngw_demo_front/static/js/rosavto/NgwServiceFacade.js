@@ -4,7 +4,7 @@ define([
         'dojo/request/xhr'
     ],
     function (declare, lang, xhr) {
-        return declare('rosavto.NgwServiceFacade', null, {
+        return declare('ngw_demo_front.NgwServiceFacade', null, {
             constructor: function (ngwUrlBase, settings) {
                 this._ngwUrlBase = ngwUrlBase;
 
@@ -12,7 +12,7 @@ define([
             },
 
             getGeometryByGuid: function (layerId, featureGuid, srs) {
-                var url = 'geocollection/rosavto?layers=' + layerId + '&guids=' + featureGuid;
+                var url = 'geocollection/ngw_demo_front?layers=' + layerId + '&guids=' + featureGuid;
 
                 if (srs) {
                     url += '&srs=' + srs;
@@ -22,7 +22,7 @@ define([
             },
 
             getGeometriesByGuids: function (layersId, guids, datetime) {
-                var url = 'geocollection/rosavto',
+                var url = 'geocollection/ngw_demo_front',
                     params = {};
 
                 params.datetime = datetime ? this.formatDateTime(datetime) : this.formatDateTime(new Date());
@@ -40,7 +40,7 @@ define([
             },
 
             identifyFeaturesByLayers: function (layersIds, wktBounds, srs) {
-                var url = 'geocollection/rosavto?',
+                var url = 'geocollection/ngw_demo_front?',
                     params;
 
                 if (!srs) {
@@ -68,7 +68,7 @@ define([
 
                 datetime = datetime ? this.formatDateTime(datetime) : this.formatDateTime(new Date());
 
-                return xhr(this._ngwUrlBase + 'geocollection/rosavto', {
+                return xhr(this._ngwUrlBase + 'geocollection/ngw_demo_front', {
                     handleAs: 'json',
                     method: 'GET',
                     query: {
@@ -106,7 +106,7 @@ define([
                 if (countsPoints === 1) {
                     point = incidentPoints[0];
 
-                    url = 'layer/' + point.layer + '/rosavto/getlrposbyuuid?guid=' + point.guid +
+                    url = 'layer/' + point.layer + '/ngw_demo_front/getlrposbyuuid?guid=' + point.guid +
                         '&distance=' + this._calculateDistanceInMeters(point) +
                         '&srs=' + srs;
 
@@ -124,7 +124,7 @@ define([
                         });
                     }
 
-                    url = 'layer/' + incidentPoints[0].layer + '/rosavto/getlrposbyuuid?srs=' + srs;
+                    url = 'layer/' + incidentPoints[0].layer + '/ngw_demo_front/getlrposbyuuid?srs=' + srs;
                     return xhr(this.proxy + url, {
                         handleAs: 'json',
                         method: 'POST',
@@ -154,7 +154,7 @@ define([
                     srs = 4326;
                 }
 
-                url = 'layer/17/rosavto/getlrsublinebyuuid?guid=' + guid +
+                url = 'layer/17/ngw_demo_front/getlrsublinebyuuid?guid=' + guid +
                     '&first=' + this._calculateDistanceInMeters(pointStart) +
                     '&last=' + this._calculateDistanceInMeters(pointFinish) +
                     '&step=1000' +
@@ -164,7 +164,7 @@ define([
             },
 
             getPointProjection: function (idLayer, guid, lat, lon) {
-                var url = 'layer/' + idLayer + '/rosavto/getlrdistbyuuid?guid=' + guid +
+                var url = 'layer/' + idLayer + '/ngw_demo_front/getlrdistbyuuid?guid=' + guid +
                     '&lon=' + lon +
                     '&lat=' + lat;
 
@@ -172,7 +172,7 @@ define([
             },
 
             getRouteByCoord: function (start_point, end_point, barrier_point) {
-                var url = '/rosavto/getroute?from_x=' + start_point.lng + '&from_y=' + start_point.lat +
+                var url = '/ngw_demo_front/getroute?from_x=' + start_point.lng + '&from_y=' + start_point.lat +
                     '&to_x=' + end_point.lng + '&to_y=' + end_point.lat;
                 if (typeof barrier_point != 'undefined')
                     url += '&bar_x=' + barrier_point.lng + '&bar_y=' + barrier_point.lat;
@@ -181,12 +181,12 @@ define([
             },
 
             getRouteByChainage: function (idLayer, guid, first, last) {
-                var url = 'layer/' + idLayer + '/rosavto/getroutebychainage?guid=' + guid + '&first=' + first + '&last=' + last;
+                var url = 'layer/' + idLayer + '/ngw_demo_front/getroutebychainage?guid=' + guid + '&first=' + first + '&last=' + last;
                 return xhr(this._ngwUrlBase + url, {handleAs: 'json', method: 'GET', data: {url: this._ngwUrlBase + url}});
             },
 
             getWaySublineByChainage: function (idLayer, guid, first, last) {
-                var url = 'layer/' + idLayer + '/rosavto/getlrsublinebyuuid?guid=' + guid +
+                var url = 'layer/' + idLayer + '/ngw_demo_front/getlrsublinebyuuid?guid=' + guid +
                     '&first=' + first + '&last=' + last + '&step=1000';
 
                 return xhr(this._ngwUrlBase + url, {handleAs: 'json', method: 'GET', data: {url: this._ngwUrlBase + url}});

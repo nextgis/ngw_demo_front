@@ -25,15 +25,15 @@
 <%block name="inlineScripts">
     <script>
         require([
-                    'rosavto/Map',
-                    'rosavto/LayersInfo',
-                    'rosavto/MapIdentify',
-                    'rosavto/AttributeGetter',
-                    'rosavto/AttributesServiceFacade',
-                    'rosavto/NgwServiceFacade',
+                    'ngw_demo_front/Map',
+                    'ngw_demo_front/LayersInfo',
+                    'ngw_demo_front/MapIdentify',
+                    'ngw_demo_front/AttributeGetter',
+                    'ngw_demo_front/AttributesServiceFacade',
+                    'ngw_demo_front/NgwServiceFacade',
                     'dojo/query',
                     'dojo/request/xhr',
-                    'rosavto/Layers/StyledGeoJsonLayer',
+                    'ngw_demo_front/Layers/StyledGeoJsonLayer',
                     'dojo/domReady!'],
 
                 function (Map, LayersInfo, MapIdentify, AttributeGetter, AttributesServiceFacade, NgwServiceFacade, query, xhr, StyledGeoJsonLayer) {
@@ -104,7 +104,7 @@
                     });
 
                     query('#selectRoads').on('click', function () {
-                        xhr(ngwProxyUrl + 'geocollection/rosavto?layers=22&boundary=20&boundary_guid=f0313d5c-9f5f-4e24-8005-503d54dd4f22', {handleAs: 'json', method: 'GET'})
+                        xhr(ngwProxyUrl + 'geocollection/ngw_demo_front?layers=22&boundary=20&boundary_guid=f0313d5c-9f5f-4e24-8005-503d54dd4f22', {handleAs: 'json', method: 'GET'})
                                 .then(function (data) {
                                     if (styledGeoJsonLayer) {
                                         styledGeoJsonLayer.clearLayers();

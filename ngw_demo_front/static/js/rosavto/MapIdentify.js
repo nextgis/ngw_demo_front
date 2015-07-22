@@ -8,8 +8,8 @@ define([
         'dojo/request/xhr',
         'dojo/topic',
         'mustache/mustache',
-        'rosavto/ParametersVerification',
-        'rosavto/Constants',
+        'ngw_demo_front/ParametersVerification',
+        'ngw_demo_front/Constants',
         'centreit/DragAndDrop',
         'leaflet/leaflet',
         'dojo/NodeList-traverse',
@@ -17,7 +17,7 @@ define([
     function (declare, array, lang, query, on, domAttr, xhr, topic, mustache,
               ParametersVerification, Constants, DnD) {
 
-        return declare('rosavto.MapIdentify', [ParametersVerification], {
+        return declare('ngw_demo_front.MapIdentify', [ParametersVerification], {
             template: '<div id="{{id}}" class="layers-selector">{{#layers}}<p>{{name}}</p><ul data-layer-id="{{id}}">{{#features}}<li data-id="{{id}}"><a href="javascript:void(0)">{{label}}</a></li>{{/features}}</ul>{{/layers}}</div>',
 
             constructor: function (settings) {

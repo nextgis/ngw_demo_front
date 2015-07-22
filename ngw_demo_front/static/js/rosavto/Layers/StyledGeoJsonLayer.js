@@ -2,7 +2,7 @@ define([
     'dojo/_base/declare',
     'leaflet/leaflet'
 ], function (declare) {
-    return declare('rosavto.StyledGeoJsonLayer', [L.GeoJSON], {
+    return declare('ngw_demo_front.StyledGeoJsonLayer', [L.GeoJSON], {
 
         constructor: function () {
             var self = this;
