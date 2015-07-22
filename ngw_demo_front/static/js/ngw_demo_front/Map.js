@@ -174,7 +174,7 @@ define([
         addOsmTileLayer: function () {
             var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 settingsOsmLayer = {
-                    attribution: 'Map data © OpenStreetMap contributors'
+                    attribution: 'OpenStreetMap'
                 };
 
             this.addTileLayer('Openstreetmap', osmUrl, settingsOsmLayer);
