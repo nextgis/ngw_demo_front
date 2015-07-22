@@ -24,9 +24,9 @@ requires = [
     'sockjs-tornado'
 ]
 
-setup(name='rosavto',
-      version='0.0',
-      description='rosavto',
+setup(name='ngw_demo_front',
+      version='0.1',
+      description='ngw_demo_front',
       long_description=README + '\n\n' + CHANGES,
       classifiers=[
           "Programming Language :: Python",
@@ -34,20 +34,19 @@ setup(name='rosavto',
           "Topic :: Internet :: WWW/HTTP",
           "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
       ],
-      author='nextgis',
+      author='Nextgis',
       author_email='info@nextgis.ru',
-      url='http://github.com/nextgis/rosavto',
+      url='http://github.com/nextgis/ngw_demo_front',
       keywords='web wsgi bfg pylons pyramid',
       packages=find_packages(),
       include_package_data=True,
       zip_safe=False,
-      test_suite='rosavto',
+      test_suite='ngw_demo_front',
       install_requires=requires,
       entry_points="""\
       [paste.app_factory]
-      main = rosavto:main
+      main = ngw_demo_front:main
       [console_scripts]
-      initialize_rosavto_db = rosavto.initializedb.initializedb:main
-      ways_exporter = rosavto.initializedb.ways_exporter:main
+      initialize_ngw_demo_front_db = ngw_demo_front.initializedb.initializedb:main
       """,
 )

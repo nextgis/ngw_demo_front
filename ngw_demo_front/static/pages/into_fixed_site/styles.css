@@ -1,0 +1,12 @@
+#map {
+    height: 500px;
+}
+
+/* for demo map */
+#map p.loaded-status {
+    color: gray;
+}
+
+#map.leaflet-container p.loaded-status {
+    display: none;
+}
