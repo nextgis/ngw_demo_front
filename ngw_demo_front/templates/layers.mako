@@ -34,16 +34,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Sub-navigation table of contents -->
-    <%
-        sub_navs = [
-            ('nav_description', u'Описание'),
-            ('nav_demo', u'Демо'),
-            ('nav_source_code', u'Пример кода')
-        ]
-    %>
-    <%include file='_sub_navigation.mako' args='sub_navs=sub_navs'/>
 </div>
 
 <%block name="inlineScripts">
