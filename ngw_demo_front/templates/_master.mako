@@ -14,7 +14,7 @@
 
     <link type="text/css" rel="stylesheet"
           href="${request.static_url('ngw_demo_front:static/contrib/materialize/css/customize.css')}"/>
-    <link rel="stylesheet" href="${request.static_url('ngw_demo_front:static/js/leaflet/leaflet.css')}"/>
+    <link rel="stylesheet" href="${request.static_url('ngw_demo_front:static/contrib/leaflet/leaflet.css')}"/>
     <link rel="stylesheet" href="${request.static_url('ngw_demo_front:static/css/widget.css')}"/>
     <link rel="stylesheet" href="${request.static_url('ngw_demo_front:static/css/main.css')}"/>
 </head>
@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="col s12 m9">
                     <h1 class="light indigo-text text-lighten-4 center-on-small-only">Демонстрация виджетов к системе
-                        NextGIS Web.</h1>
+                        NextGIS Web</h1>
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
                 isDebug: true,
                 async: true,
                 cacheBust: true,
-                baseUrl: "${request.static_url('ngw_demo_front:static')}",
+                baseUrl: "${request.static_url('ngw_demo_front:static/')}",
                 packages: [
                     {name: "ngw_demo_front", location: 'js/ngw_demo_front'},
                     {name: "proj4js", location: 'contrib/proj4js'},
@@ -96,8 +96,8 @@
 </script>
 
 <script src="//ajax.googleapis.com/ajax/libs/dojo/1.9.7/dojo/dojo.js"></script>
-<script src="${request.static_url('ngw_demo_front:static/js/sockjs/sockjs.js')}"></script>
-<script src="${request.static_url('ngw_demo_front:static/js/stomp/stomp.js')}"></script>
-<script src="${request.static_url('ngw_demo_front:static/js/centreit/MonitoringCard.js')}"></script>
+<script src="${request.static_url('ngw_demo_front:static/contrib/sockjs/sockjs.js')}"></script>
+<script src="${request.static_url('ngw_demo_front:static/contrib/stomp/stomp.js')}"></script>
+<script src="${request.static_url('ngw_demo_front:static/contrib/centreit/MonitoringCard.js')}"></script>
     <%block name="inlineScripts"/>
 </html>
