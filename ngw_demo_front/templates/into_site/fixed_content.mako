@@ -67,7 +67,7 @@
                         <td width="112" height="47">&nbsp;</td>
                         <td width="198" height="47" valign="bottom" align="center">
                             <a href="http://www.moacadem.ru/" alt="Главная"><img
-                                    src="Главная%20страница_files/btn_sm_1.gif')}" width="23" height="23"></a>
+                                    src="${request.static_url('ngw_demo_front:static/pages/into_fixed_site/content/btn_sm_1.gif')}" width="23" height="23"></a>
                             <img src="${request.static_url('ngw_demo_front:static/pages/into_fixed_site/content/btn_sm_s.gif')}"
                                  width="3" height="23">
                             <a href="http://www.moacadem.ru/#" alt="Написать письмо"><img
