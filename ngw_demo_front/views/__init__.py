@@ -107,6 +107,12 @@ def proxy_ngw(request):
     return get_response_by_proxy(request, url)
 
 
+@view_config(route_name='proxy_ngw_city', renderer='json')
+def proxy_ngw(request):
+    url = request.registry.settings['proxy_ngw_city'] + '/'.join(request.matchdict['target_url'])
+    return get_response_by_proxy(request, url)
+
+
 @view_config(route_name='proxy_cit', renderer='json')
 def proxy_cit(request):
     url = request.registry.settings['proxy_cit'] + '/'.join(request.matchdict['target_url'])
