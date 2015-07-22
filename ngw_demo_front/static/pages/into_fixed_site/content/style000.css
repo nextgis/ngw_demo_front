@@ -1,0 +1,78 @@
+body {padding-right: 0px; padding-left: 0px; font-size: 12px; padding-bottom: 0px; margin: -1px; width: 100%; padding-top: 0px; height: 100%; background-color: #feffe0}
+img {border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px}
+*{font-size: 12px; color: black; font-family: arial, verdana, sans-serif}
+
+p{margin-top:0px; margin-bottom:20px}
+ul{padding:0; margin:0; padding-left:16px; text-align:left}
+li{margin-bottom:5px; margin-top:5px; list-style-image: url('li000000.gif')}
+
+a{font-size: 12px; text-decoration: underline; color: #0061bb}
+a:hover {text-decoration: none}
+ 
+ 
+h1{font-family:verdana, arial,sans-serif; font-weight: normal; color:#d75c92; font-size: 20px; text-align:right; border-bottom:1px solid #d75c92; margin-bottom:25px; margin-top:0px}
+h2{font-family:arial, verdana, sans-serif; color:#286b00; font-size:15px; font-weight: bold; margin-bottom:5px}
+h3{font-family:arial,sans-serif; color:#666666; font-size:13px; font-weight:bold; margin-bottom:10px}
+
+#table_00{border:1px solid #1d3a13; border-top-width:0px; background-color:#FFFFFF}
+#bg_02{background-color:#3E8A00; background-image:url('bg_head_.gif'); background-position:top; background-repeat:no-repeat}
+#bg_02_forum{background-color:#3E8A00; background-image:url('http://www.moacadem.ru/i/bg_head_02f.gif'); background-position:top; background-repeat:no-repeat}
+#bg_02_8{background-color:#3E8A00; background-image:url('http://www.moacadem.ru/i/bg_head_02b.jpg'); background-position:top; background-repeat:no-repeat}
+#bg_03{background-color:#3E8A00; background-image:url('bg_head_.jpg'); background-position:top; background-repeat:no-repeat}
+#bg_03_l2{background-color:#3E8A00; background-image:url('http://www.moacadem.ru/i/bg_head_03_l2.jpg'); background-position:top; background-repeat:no-repeat}
+#bg_03b{background-color:#3E8A00; background-image:url('bg_head0.gif'); background-position:top; background-repeat:no-repeat}
+#bg_03c{background-color:#3E8A00; background-image:url('http://www.moacadem.ru/i/bg_head_03c.gif'); background-position:top; background-repeat:no-repeat}
+#logo{background-image:url('head_bg_.gif'); background-position:top; background-repeat:no-repeat}
+#logo img{margin-top:16px}
+#logo_f{background-image:url('http://www.moacadem.ru/i/head_bg_04f.gif'); background-position:top; background-repeat:repeat-x}
+#logo_f img{margin-top:16px; margin-right:16px}
+#search{ background-image:url('bg_head1.gif'); background-position:left top; background-repeat: no-repeat}
+#search input{height:22px}
+
+a.pdd{color:black; text-decoration:none; font-size:10px; line-height:9px}
+
+#col_1 {background-color:#d1ddeb}
+#menu {background-color:#C9E1CB; padding-bottom:15px; padding-top:5px; border:0px solid #000000; border-bottom-width:1px}
+#menu li{margin-left:15px; margin-bottom:10px; list-style-image: url('http://www.moacadem.ru/i/li_m.gif')}
+#menu a{color:#133b15}
+#col_1 a.item{display:block; color:#133b15; width:90%; text-decoration:none; padding:6px 5px 6px 5px; background-color:#FFFFFF; margin-bottom:4px; text-align:left; 
+	background-image:url('bg_menu_.gif'); background-position:bottom; background-repeat:repeat-x; border: 1px solid #74986a; line-height:13px}
+
+#col_1 a.item:hover{color:#567557; border: 1px solid #1D3A13}
+#col_1 div.item_select{color:#133b15; width:90%; text-decoration:none; padding:6px 5px 6px 5px; background-color:#FFFFFF; margin-bottom:4px; text-align:left; 
+	background-image:url('bg_menu0.gif'); background-position:bottom; background-repeat:repeat-x; border: 1px solid #1D3A13; line-height:13px}
+
+#col_2 {background-color:#3E8A00; background-image: url('bg_02000.gif'); background-repeat:no-repeat; background-position:bottom left}
+#col_2b {background-color:#3E8A00; background-image: url('http://www.moacadem.ru/i/bg_02b.gif'); background-repeat:no-repeat; background-position:bottom left}
+#col_2f {background-image: url('http://www.moacadem.ru/i/bg_02f.gif'); background-repeat:no-repeat; background-position:bottom right}
+#col_2 div{color: white; padding-right:15px}
+#col_2b div{color: white; padding-right:15px}
+#col_2f div{color: white; padding:0px 15px 8px 0px; border-bottom:1px solid #0d290f}
+#col_3 { background-color:#D1DDEB; background-image: url('bg_03000.gif'); background-repeat:no-repeat; background-position:bottom}
+#col_3d { background-color:#D1DDEB; background-image: url('http://www.moacadem.ru/i/bg_03d.gif'); background-repeat:no-repeat; background-position:bottom}
+#col_2a { background-image: url('bg_03000.gif'); background-repeat:no-repeat; background-position:bottom right}
+#menu_2 {background-color:#e3f0e4; padding-bottom:15px; padding-top:5px; border:0px solid #000000; border-bottom-width:1px}
+#info {background-color:#fbf4dc; padding-bottom:13px; padding-top:13px; border:0px solid #000000; border-bottom-width:1px}
+#info_2 {padding-bottom:35px; padding-top:15px}
+#info img{margin:2px}
+#menu_2 a.item{display:block; color:#133b15; width:90%; text-decoration:none; padding:4px; background-color:#FFFFFF; margin-top:4px; 
+	background-image:url('bg_menu_.gif'); background-position:bottom; background-repeat:repeat-x; border: 1px solid #74986a; line-height:13px}
+#menu_2 a.item:hover{color:#567557; border: 1px solid #1D3A13}
+#col_3b { background-image: url('http://www.moacadem.ru/i/bg_03b.gif'); background-repeat:no-repeat; background-position:bottom}
+#col_4 { background-image: url('bg_04000.gif'); background-repeat:no-repeat; background-position:bottom left}
+
+#news {padding-bottom:14px}
+#news div{background-color:#d75c92; color: white; width:50px; text-align:center; font-size:11px}
+#news span{display:block; margin-left:25px}
+
+#cinema{background-color:#d1ddeb; padding:5px; padding-top:10px}
+#cinema div{border:1px solid #002952; background-color:#FFFFFF; padding:6px; padding-top:14px; text-align:left;
+	background-image:url('http://www.moacadem.ru/i/bg_cinema.gif'); background-position:top; background-repeat:repeat-x;}
+#cinema b{font-size:11px; color:#002952}
+#cinema li{font-size:10px; color:#333333}
+
+
+#grit{font-size: 10px; color: #666666; padding-left: 15px}
+#grit b{font-weight: bold; font-size: 10px; color: #666666}
+#grit a{font-size: 10px; color: #666666; text-decoration: underline}
+#grit a:hover{font-size: 10px; color: #666666; text-decoration: none}
