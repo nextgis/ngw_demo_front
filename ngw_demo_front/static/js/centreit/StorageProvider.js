@@ -5,18 +5,21 @@ define(['dojo',
     'dojo/Deferred'
 ], function (dojo, dojox, script, Deferred) {
     var storage = new Deferred();
-    script.get(dojo.baseUrl + '../dojox/storage/Provider.js')
+    script.get('http://ajax.googleapis.com/ajax/libs/dojo/1.9.7/dojox/storage/Provider.js')
         .then(function () {
-            script.get(dojo.baseUrl + '../dojox/storage/manager.js')
+            script.get('http://ajax.googleapis.com/ajax/libs/dojo/1.9.7/dojox/storage/manager.js')
                 .then(function () {
-                    script.get(dojo.baseUrl + '../dojox/storage/LocalStorageProvider.js')
+                    script.get('http://ajax.googleapis.com/ajax/libs/dojo/1.9.7/dojox/storage/LocalStorageProvider.js')
                         .then(function () {
-                            script.get(dojo.baseUrl + '../dojox/storage/CookieStorageProvider.js')
+                            script.get('http://ajax.googleapis.com/ajax/libs/dojo/1.9.7/dojox/storage/CookieStorageProvider.js')
                                 .then(function () {
-                                    dojox.storage.manager.initialize();
-                                    var storageProvider = dojox.storage.manager.getProvider();
-                                    storageProvider.initialize();
-                                    storage.resolve(storageProvider);
+                                    var storageProvider;
+                                    if (dojox.storage && dojox.storage.manager) {
+                                        dojox.storage.manager.initialize();
+                                        dojox.storage.manager.getProvider();
+                                        storageProvider.initialize();
+                                        storage.resolve(storageProvider);
+                                    }
                                 });
                         });
                 });
