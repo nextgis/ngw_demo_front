@@ -20,6 +20,10 @@ def main(global_config, **settings):
     config.add_route('base_layers', '/base_layers')
     config.add_route('layers', '/layers')
 
+    # into site
+    config.add_route('into_fixed_site', '/site/fixed')
+    config.add_route('into_fixed_site_content', '/site/fixed/content')
+
     config.add_route('layer', '/layer')
     config.add_route('marker', '/marker')
     config.add_route('realtime', '/realtime')
@@ -39,6 +43,7 @@ def main(global_config, **settings):
 
     # proxies url
     config.add_route('proxy_ngw', '/ngw/*target_url')
+    config.add_route('proxy_ngw_city', '/proxy/ngw/city/*target_url')
     config.add_route('proxy_cit', '/cit/*target_url')
     
     # routing url 
