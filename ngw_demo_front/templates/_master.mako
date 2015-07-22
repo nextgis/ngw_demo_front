@@ -78,15 +78,15 @@
                 isDebug: true,
                 async: true,
                 cacheBust: true,
-                baseUrl: "${request.static_url('ngw_demo_front:static/js')}",
+                baseUrl: "${request.static_url('ngw_demo_front:static')}",
                 packages: [
-                    {name: "ngw_demo_front", location: 'ngw_demo_front'},
-                    {name: "proj4js", location: 'proj4js'},
-                    {name: "mustache", location: 'mustache'},
-                    {name: 'leaflet', location: 'leaflet'},
-                    {name: 'centreit', location: 'centreit'},
-                    {name: 'stomp', location: 'stomp'},
-                    {name: 'sockjs', location: 'sockjs'}
+                    {name: "ngw_demo_front", location: 'js/ngw_demo_front'},
+                    {name: "proj4js", location: 'contrib/proj4js'},
+                    {name: "mustache", location: 'contrib/mustache'},
+                    {name: 'leaflet', location: 'contrib/leaflet'},
+                    {name: 'centreit', location: 'js/centreit'},
+                    {name: 'stomp', location: 'contrib/stomp'},
+                    {name: 'sockjs', location: 'contrib/sockjs'}
                 ],
                 has: {
                     "dojo-firebug": true,
