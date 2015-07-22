@@ -5161,13 +5161,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit; }
 
 h1 {
-  font-size: 4.2rem;
-  line-height: 4.62rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   margin: 2.1rem 0 1.68rem 0; }
 
 h2 {
-  font-size: 3.56rem;
-  line-height: 3.916rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   margin: 1.78rem 0 1.424rem 0; }
 
 h3 {
@@ -7954,10 +7954,8 @@ nav ul li:hover, nav ul li.active {
 .preview {
   background-color: #FFF;
   border: 1px solid #eee;
-  padding: 20px 20px; }
-
-header, main, footer {
-  padding-left: 240px; }
+  padding: 20px 20px;
+}
 
 .parallax-demo header, .parallax-demo main, .parallax-demo footer {
   padding-left: 0; }
